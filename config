@@ -19,6 +19,7 @@
   [[default]]
     background_darkness = 0.92
     background_image = None
+    background_color = "#002b36"
     background_type = transparent
     cursor_color = "#3036ec"
     custom_command = tmux
