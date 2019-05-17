@@ -17,10 +17,10 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.92
-    background_image = None
     background_color = "#1c1c1c"
-    background_type = transparent
+    #background_darkness = 0.92
+    #background_image = None
+    #background_type = transparent
     cursor_color = "#3036ec"
     custom_command = tmux
     font = Ubuntu Mono 13
