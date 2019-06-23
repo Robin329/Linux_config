@@ -17,7 +17,7 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#1c1c1c"
+    background_color = "#07242e"
     #background_darkness = 0.92
     #background_image = None
     #background_type = transparent
