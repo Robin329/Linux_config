@@ -14,3 +14,6 @@ Ctrl+Shift+V 粘贴
 Ctrl+Shift+N 或者 Ctrl+Tab 在分割的各窗口之间切换
 Ctrl+Shift+X 将分割的某一个窗口放大至全屏使用
 Ctrl+Shift+Z 从放大至全屏的某一窗口回到多窗格界面
+
+3.修改terminator config文件
+`man terminator_config`查看支持哪些配置
