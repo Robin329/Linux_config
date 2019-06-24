@@ -16,4 +16,11 @@ Ctrl+Shift+X 将分割的某一个窗口放大至全屏使用
 Ctrl+Shift+Z 从放大至全屏的某一窗口回到多窗格界面
 
 3.修改terminator config文件
+
 `man terminator_config`查看支持哪些配置
+
+4.修改右键打开terminator终端
+
+https://blog.csdn.net/zhanghm1995/article/details/89419109
+
+5.
