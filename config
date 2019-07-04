@@ -17,10 +17,11 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#07242e"
-    #background_darkness = 0.92
-    #background_image = None
-    #background_type = transparent
+	#background_color = "#07242e"
+    	background_darkness = 0.5
+	background_type = image
+	background_image = /home/robin/.config/terminator/picture/570f05f14c170.jpg
+	scroll_background = False
     cursor_color = "#3036ec"
     custom_command = tmux
     font = Ubuntu Mono 13
