@@ -24,6 +24,9 @@ Ctrl+Shift+Z 从放大至全屏的某一窗口回到多窗格界面
 https://blog.csdn.net/zhanghm1995/article/details/89419109
 
 ##### 5.Ubuntu16.04的系统无法更换背景图片
+
+1、默认Terminator0.97是支持更换背景图片的
+
 2、更新系统资源。
 
 `sudo apt-get  update  `
