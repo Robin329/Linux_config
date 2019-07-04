@@ -24,6 +24,15 @@ Ctrl+Shift+Z 从放大至全屏的某一窗口回到多窗格界面
 https://blog.csdn.net/zhanghm1995/article/details/89419109
 
 ##### 5.Ubuntu16.04的系统无法更换背景图片
+源码位置：https://launchpad.net/terminator
+##### 安装步骤：
+`sudo apt install gconf2 python-gobject python-gtk2 python-gnome2 python-vte python-keybinder python-notify`
+
+`sudo apt --fix-broken install`
+
+`sudo apt install gconf2 python-gobject python-gtk2 python-gnome2 python-vte python-keybinder python-notify`
+
+`sudo dpkg -i terminator_0.97-2ubuntu0.1_all.deb`
 
 1、默认Terminator0.97是支持更换背景图片的
 
