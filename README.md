@@ -23,4 +23,31 @@ Ctrl+Shift+Z 从放大至全屏的某一窗口回到多窗格界面
 
 https://blog.csdn.net/zhanghm1995/article/details/89419109
 
-5.
+##### 5.Ubuntu16.04的系统无法更换背景图片
+2、更新系统资源。
+
+`sudo apt-get  update  `
+
+3、安装xfce4终端工具。
+
+`sudo apt-get  install   xfce4-terminal`
+
+
+
+4、安装完成后在左上角dash菜单中找到xfce4终端打开。
+
+
+
+5、接着在窗口选择“编辑”--“首选项”。
+
+
+
+6、弹出的窗口切换到“外观”。
+
+
+
+7、在底部的“背景”里选择背景图片，样式拉伸、透明度。
+
+
+
+8、这样我们的终端就有背景图片显示了。
