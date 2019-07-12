@@ -36,3 +36,18 @@ https://blog.csdn.net/zhanghm1995/article/details/89419109
 `sudo apt install gconf2 python-gobject python-gtk2 python-gnome2 python-vte python-keybinder python-notify`
 
 `sudo dpkg -i terminator_0.97-2ubuntu0.1_all.deb`
+
+##### 高效回退到特定目录
+1.安装
+
+`echo 'source ~/.config/up/up.sh' >> ~/.bashrc`
+
+`source ~/.bashrc`
+
+2.使用
+
+`up`	默认返回上一层目录
+`up [特定目录的首两个字母缩写（可以用Tab键）]`	返回特定目录
+`up [num]`	表示返回上num层目录	
+
+
