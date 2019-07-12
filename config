@@ -18,9 +18,9 @@
 [profiles]
   [[default]]
 	#background_color = "#07242e"
-    	background_darkness = 0.5
+	background_darkness = 0.7
 	background_type = image
-	background_image = /home/robin/.config/terminator/picture/570f05f14c170.jpg
+	background_image = /home/robin/.config/terminator/picture/linux_terminator_background.jpg
 	scroll_background = False
     cursor_color = "#3036ec"
     custom_command = tmux
