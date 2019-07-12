@@ -47,7 +47,9 @@ https://blog.csdn.net/zhanghm1995/article/details/89419109
 2.使用
 
 `up`	默认返回上一层目录
+
 `up [特定目录的首两个字母缩写（可以用Tab键）]`	返回特定目录
+
 `up [num]`	表示返回上num层目录	
 
 
