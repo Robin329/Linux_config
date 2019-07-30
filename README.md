@@ -53,3 +53,8 @@ https://blog.csdn.net/zhanghm1995/article/details/89419109
 `up [num]`	表示返回上num层目录	
 
 
+##### 好用的双面板文件管理器
+1.安装
+sudo apt-get install krusader
+
+2.
