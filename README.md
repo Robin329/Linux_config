@@ -58,3 +58,7 @@ https://blog.csdn.net/zhanghm1995/article/details/89419109
 sudo apt-get install krusader
 
 2.
+
+##### 如何安装samba
+1.
+https://www.linuxidc.com/Linux/2018-11/155466.htm
