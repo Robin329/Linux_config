@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Copier vers un dossier</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="copier,copier fichiers, dossiers" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "opcopyto.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Copier vers un dossier</span></h1>
+<p class="p_Command2"><span class="f_Command2">Actions </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Copier vers un dossier</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p class="p_Normal">Dans le menu <span class="f_Command">Actions</span>, la commande <span class="f_Command">Copier vers un dossier</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="copyto.png"/> copie les fichiers et les dossiers sélectionnés vers un dossier donné, optionnellement avec le chemin d'accès intact.  Vous pouvez sélectionner des éléments d'un côté ou de l'autre côté de la vue de Comparaison de Dossiers, mais pas des deux.</p>
+<p class="p_Normal">Si un dossier est sélectionné, seul son <a href="dir_filtering_the_view.html" class="topiclink">contenu filtré</a> sera copié (identiquement comme si le dossier était développé et tout son contenu visible sélectionné).  Toutefois, si un dossier ouvert est sélectionné et que n'importe lequel de ses enfants est également sélectionné, alors la sélection du dossier est ignorée et seuls les enfants sélectionnés seront copiés.</p>
+<p class="p_Normal">Lorsque vous sélectionnez <span class="f_Command">Copier vers un dossier</span>, vous pouvez donner comme cible un fichier archive (tel que .zip).  Si le fichier archive n'existe pas, Beyond Compare le créera pour vous.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Exemple d'options de chemin</span></p>
+<p class="p_Subtitle"><img width="134" height="165" style="float:left;margin:8px 8px 8px 8px;width:134px;height:165px;border:none" src="todir.png"/><br/></p>
+<p class="p_Subtitle">Dans cet exemple, trois éléments sont sélectionnés :  Le fichier 10.txt, le dossier Q et le fichier 30.txt.<br clear=all></p>
+<p class="p_Normal">Les figures ci-dessous montrent comment les éléments apparaissent dans les dossiers cibles, en utilisant chacune des trois options de chemin d'accès.</p>
+<p class="p_Normal"><img width="134" height="118" style="float:left;margin:8px 8px 8px 8px;width:134px;height:118px;border:none" src="todirkeeprelative.png"/><br/></p>
+<p class="p_Normal"><span class="f_Command">Conserver la structure relative du dossier</span></p>
+<p class="p_Normal">Détermine la différence minimale entre tous les chemins d'accès des fichiers sélectionnés, et le crée dans le dossier cible.  Dans cet exemple, les dossiers D et P ne sont pas sélectionnés, mais ils ont été créés dans le dossier cible de façon à conserver la même structure relative.<br clear=all></p>
+<p class="p_Normal"><img width="134" height="166" style="float:left;margin:8px 8px 8px 8px;width:134px;height:166px;border:none" src="todirkeepbase.png"/><br/></p>
+<p class="p_Normal"><span class="f_Command">Conserver la structure du dossier de base</span></p>
+<p class="p_Normal">Crée le chemin d'accès complet (jusqu'au dossier de base) dans le dossier cible.<br clear=all></p>
+<p class="p_Normal"><img width="134" height="69" style="float:left;margin:8px 8px 8px 8px;width:134px;height:69px;border:none" src="todirflatten.png"/><br/></p>
+<p class="p_Normal"><span class="f_Command">Ne pas conserver la structure du dossier</span></p>
+<p class="p_Normal">Ignore toute information de chemin d'accès et copie ensemble tous les fichiers et dossiers sélectionnés dans le dossier cible.  Dans cet exemple, uniquement le dossier Q a été créé dans le dossier cible parce qu'il était spécifiquement sélectionné.</p>
+
+</td></tr></table>
+
+</body>
+</html>

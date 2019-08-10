@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>FTP-Profil-Listings-Einstellungen</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="FTP,FTP Listing-Format" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "profileftplisting.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">FTP-Profil-Listings-Einstellungen</span></h1>
+<p class="p_Command2"><span class="f_Command2">FTP-Profil </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Listings</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="profileftpproxy.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="profileftp.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="profileftptransfer.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Beyond Compare analysiert die Reintext-Verzeichnislistings, die vom FTP-Server gesendet werden, um die entfernte Ordnerstruktur zu bestimmen.  Leider gibt es keinen allein gültigen Standard für diese Listings.</p>
+<p class="p_Normal">Diese Einstellungen helfen Beyond Compare, die Konventionen und Fähigkeiten des FTP-Servers zu verstehen.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Verknüpfungsauflösung</span></p>
+<p class="p_Normal">FTP-Standorte können Dateien miteinander verbinden, indem symbolische Verknüpfungen verwendet werden, die von einem Bereich des Standortes zu einem anderen verweisen.  Diesen Verknüpfungen ist nicht anzusehen, ob sie auf eine Datei oder einen Ordner zeigen, so dass folgende Möglichkeiten zur Auflösung verfügbar sind:</p>
+<p class="p_Command"><span class="f_Command">Schnell</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um jede Verknüpfung, die eine Erweiterung (z.B. &quot;.txt&quot;) enthält, als Datei anzusehen, und alle anderen als Ordner.  Dies benötigt keine extra Übertragungen.</p>
+<p class="p_Command"><span class="f_Command">Einfach</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um Ordner in jede Verknüpfung zu ändern, wie sie gerade erscheinen.  Wenn dies erfolgreich ist, wird diese Verknüpfung als Ordner angesehen; ansonsten als Datei.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">LIST Optionen</span></p>
+<p class="p_Command"><span class="f_Command">MLSD-Befehl verwenden</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um detailreichere Zeitstempel vom Server zu erhalten.  Ist dies erfolgreich, werden die folgenden Einstellungen ignoriert.  Symbolische Verknüpfungen werden als reine Dateien und Ordner aufgelistet, und Listings werden nicht rekursiv durchlaufen.</p>
+<p class="p_Command"><span class="f_Command">Versteckte zeigen [-a]</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um den FTP-Server zu veranlassen, Dateien einzubeziehen, die er normalerweise nicht einbeziehen würde; wie Unix-Dateinamen, die mit einem Punkt beginnen.</p>
+<p class="p_Command"><span class="f_Command">Langformat erzwingen [-l]</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um die Ausgabe des list-Befehls des FTP-Servers zu ändern.  Versuchen Sie diese Option, wenn Beyond Compare keine Dateien beim Laden auflistet.</p>
+<p class="p_Command"><span class="f_Command">Vollständige Zeitstempel [-T]</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um die vom FTP-Server gelieferten Zeitstempel um vollständige Datums- und Uhrzeitangaben inklusive Sekunden zu erweitern.</p>
+<p class="p_Command"><span class="f_Command">Verknüpfungen auflösen [-L]</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um den FTP-Server zu veranlassen, symbolische Verknüpfungen bzw. &quot;Soft Links&quot; als reine Dateien und Ordner aufzulisten, mit Zeitstempel und Größe des Zieles, zu dem die Verknüpfung zeigt.</p>
+<p class="p_Command"><span class="f_Command">Rekursiv [-R]</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um Verzeichnislistings rekursiv als Antwort auf einen einzigen FTP-list-Befehl zu durchlaufen, inklusive Inhalt der Unterordner.  Rekursive Listings können zunächst durchaus langsamer sein, sparen jedoch insgesamt Zeit, wenn gegebenenfalls Unterordner untersucht werden müssen.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Verschiedene Einstellungen</span></p>
+<p class="p_Command"><span class="f_Command">VMS-Versionen verbergen</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um lediglich die aktuelle Version einer Datei einzubeziehen, und diese mit einer lokalen Datei auszurichten.  Ansonsten werden sämtliche Versionen einer Datei mit ihren Versionsnummern einbezogen.</p>
+<p class="p_Command"><span class="f_Command">Unvollständige Zeitstempel holen</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um die Uhrzeit der letzten Änderung der Datei für jene Fälle zu ermittelm, in denen das Verzeichnislisting nur das Datum enthält.  Dies führt zu genaueren Zeitstempelvergleichen, jedoch auf Kosten der Ausführungsgeschwindigkeit.  Nicht auf allen FTP-Servern unterstützt.</p>
+<p class="p_Normal"><img width="12" height="12" style="margin:0;width:12px;height:12px;border:none" src="note.png"/><span class="f_Subtitle">Hinweis:  </span>Sollten Sie Unterstützung für die Einstellungen auf dieser Seite benötigen, dann wenden Sie sich bitte an Ihren Systemadministrator.</p>
+
+</td></tr></table>
+
+</body>
+</html>

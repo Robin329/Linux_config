@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Rechercher du texte</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "searching_for_text.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Rechercher du texte</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="walking_through_differences.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="viewtext.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="viewtextmerge.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Pour rechercher du texte dans une session de Comparaison de Textes, sélectionnez <span class="f_Command">Rechercher &gt; Recherche</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="find.png"/>.  Entrez le texte ou un motif d'expression régulière dans le champ, ou sélectionnez une recherche précédente dans la liste déroulante.  Cliquez sur le bouton <span class="f_Command">Insérer un élément d'expression régulière</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="dropdown.png"/> pour choisir dans la liste des termes usuels d'expression régulière.  Prenez-en une dans la liste pour l'insérer dans le champs de saisie.</p>
+<p class="p_Normal">Cliquez sur le bouton <span class="f_Command">Suivant</span> pour déplacer le curseur à la prochaine correspondance.  Si l'éditeur est en <a href="editing_text.html" class="topiclink">mode ligne</a>, vous pouvez cliquer sur le bouton <span class="f_Command">Sélectionner tout</span> pour sélectionner toutes les lignes qui contiennent une correspondance.</p>
+<p class="p_SingleSpaced">Les options du panneau Recherche sont :</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Option</p>
+</td>
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Signification</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Expression régulière</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Interpréter le texte de recherche comme une <a href="regular_expression_reference.html" class="topiclink">expression régulière compatible Perl</a>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Respecter la casse de caractère</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Trouver uniquement du texte avec la même casse de caractère (majuscule ou minuscule).</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Mots entiers uniquement</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Rechercher <span style="font-style: italic;">port</span> ne trouvera pas <span style="font-style: italic;">ports</span>, <span style="font-style: italic;">report</span> ou <span style="font-style: italic;">importer</span>.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Rechercher avec bouclage</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Lorsqu'une fin du fichier est atteinte, continuer la recherche depuis l'autre bout.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Côtés</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Sélectionner de quel(s) côté(s) de la comparaison rechercher.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Fermer automatiquement</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Le panneau sera caché au démarrage de la recherche.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_SingleSpaced"><span class="f_SingleSpaced">&nbsp;</span></p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Rechercher le suivant</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="findnext.png"/> ou <span class="f_Command">Rechercher le précédent</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="findprev.png"/> pour continuer la recherche du même texte.</p>
+<p class="p_Normal">Pour rechercher et remplacer du texte, sélectionnez <span class="f_Command">Remplacer</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="replace.png"/>.</p>
+
+</td></tr></table>
+
+</body>
+</html>

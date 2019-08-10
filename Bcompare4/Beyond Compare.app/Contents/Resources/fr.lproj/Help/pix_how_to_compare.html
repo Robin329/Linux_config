@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Comment comparer dans la Comparaison d'Images</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "pix_how_to_compare.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Comment comparer dans la vue de Comparaison d'Images</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="viewpix.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="viewpix.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="viewreg.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Subtitle"><span class="f_Subtitle">Alignement du contenu de l'image</span></p>
+<p class="p_Normal">Vous pouvez comparer des images qui ont été retaillées, pivotées, réfléchies ou recadrées.</p>
+<p class="p_Normal">Sélectionner <span class="f_Command">Taille automatique</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixautoscale.png"/> pour agrandir automatiquement la plus petite image pour correspondre à l'échelle de la plus grande.</p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Pivoter Sens horlogique</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixrotateright.png"/> ou <span class="f_Command">Affichage &gt; Pivoter Sens anti-horlogique</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixrotateleft.png"/> pour faire pivoter l'image actuelle de 90 degrés vers la droite ou vers la gauche.</p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Retourner horizontalement</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixfliphorz.png"/> ou <span class="f_Command">Retourner verticalement</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixflipvert.png"/> pour retourner l'image actuelle par rapport à ses axes x ou y.</p>
+<p class="p_Normal">Si une image est une version détourée de l'autre, vous pouvez faire glisser la souris sur le panneau de différences pour ajuster la position du coin supérieur gauche de l'image de droite.  Pour remettre le décalage à (0,0), sélectionnez <span class="f_Command">Réinitialiser le décalage de différence</span>, ou simplement cliquez sur le libellé du décalage.  Pour un contrôle plus fin, utilisez les touches fléchées pour bouger le décalage d'un pixel à la fois, ou Ctrl+Flèche pour se déplacer d'une plus grande quantité.  Notez que le panneau des différences doit être sélectionné pour que les fonctions agissent via le clavier.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Mode Tolérance</span></p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Mode Tolérance</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixdifftolerance.png"/> pour avoir les pixels de différence qui indiquent les concordances, les différences non importantes et les différences importantes.  Il utilise une <span class="f_Command">Tolérance</span> pour définir le plus grand niveau de différence qu'il considère comme non important.  Vous pouvez également définir les <span class="f_Command">Remplacements</span> pour ignorer des changements de couleur spécifiques entre les images.  Par défaut, des nuances de gris sont utilisées pour des correspondances, des nuances de bleu sont utilisées pour des différences non importantes, et des nuances de rouge sont utilisées pour des différences importantes.  Vous pouvez ajuster ces couleurs pour convenir à vos préférences.  (Voir <a href="optionspixcolor.html" class="topiclink">Couleurs de la Comparaison d'Images</a>.)</p>
+<p class="p_Normal">Cochez <span class="f_Command">Affichage &gt; Ignorer les différences non importantes</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="insigignored.png"/> pour ignorer toute différence inférieure ou égale à la tolérance.  Elles seront traitées de la même façon que les pixels correspondants.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Mode Plage de non-correspondance</span></p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Mode Plage de non correspondance</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixdiffrange.png"/> pour avoir des pixels de différence qui représentent le degré de différence entre les images.  Des pixels noirs sont utilisés pour les correspondances, et des jaunes sont utilisés pour des différences.  La luminosité représente le degré de différence.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Mode Fusion</span></p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Mode Fusion</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="pixdiffblend.png"/> pour utiliser un pourcentage configurable de <span class="f_Command">Fusion</span> pour combiner les images.  Diminuez le pourcentage pour rendre l'image de droite plus dominante.</p>
+
+</td></tr></table>
+
+</body>
+</html>

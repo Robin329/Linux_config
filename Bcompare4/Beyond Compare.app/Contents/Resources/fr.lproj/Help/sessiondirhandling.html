@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Paramètres de traitement de la Comparaison de Dossiers</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="fichiers archives,fichiers archives traitement,substitution,substitution formats de fichier,rafraîchir,rafraîchir automatiquement,fichiers zip,fichiers zip traitement" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "sessiondirhandling.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Paramètres de traitement de la Comparaison de Dossiers</span></h1>
+<p class="p_Command2"><span class="f_Command2">Session </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Paramètres de session </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Traitement</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="sessiondircomparison.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="sessiondir.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="sessiondirnamefilter.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Subtitle"><span class="f_Subtitle">Traitement de dossier</span></p>
+<p class="p_Normal"><span class="f_Command">Balayer automatiquement les sous-dossiers en arrière-plan</span> provoque la lecture des dossiers en arrière-plan.  De cette façon, des dossiers peuvent être colorés de manière adéquate avant que vous ne les ouvriez.  Les dossiers orphelins de niveau racine peuvent habituellement être colorés et filtrés sans balayage puisqu'ils ne peuvent contenir que des autres orphelins.  <span class="f_Command">Balayer automatiquement les sous-dossiers orphelins du niveau racine</span> provoque le balayage sans condition de ces dossiers orphelins, ainsi la taille des dossiers peut être rapportée précisément.</p>
+<p class="p_Normal"><span class="f_Command">Étendre les sous-dossiers lors du chargement de session</span> ouvre tous les dossiers automatiquement lorsqu'une comparaison est chargée.  <span class="f_Command">Étendre uniquement les sous-dossiers avec différences</span> limite l'expansion automatique aux dossiers qui sont trouvés comme ayant des non-correspondances.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Traitement d'archive (ex. fichiers zip)</span></p>
+<p class="p_Normal"><span class="f_Command">Toujours comme des fichiers</span> traite les fichiers archives comme des autres fichiers.  Elles seront triées avec les fichiers et ne seront pas indiquées par une icône de dossier.</p>
+<p class="p_Normal"><span class="f_Command">Comme des dossiers une fois ouvertes</span> trie et compare les fichiers archives comme des autres fichiers, mais ont une icône de dossier zip.  Une fois le dossier zip ouvert, son état de comparaison change pour indiquer son contenu comme les autres dossiers le font.</p>
+<p class="p_Normal"><span class="f_Command">Toujours comme des dossiers</span> traite les fichiers archives comme des dossiers ordinaires.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Traitement de fichier</span></p>
+<p class="p_Command"><span class="f_Command">Modifier l'horodatage des fichiers locaux lors de la copie vers un site FTP</span></p>
+<p class="p_Normal">Plusieurs sites FTP n'autorise pas Beyond Compare à contrôler l'horodatage de fichier, ainsi lorsqu'un fichier est copié sur le site FTP, sa date ne sera pas celle de la version locale.  Cette option change l'horodatage du fichier local pour coïncider avec la copie FTP.</p>
+<p class="p_Command"><span class="f_Command">Suivre les liens symboliques</span></p>
+<p class="p_Normal">Affiche les liens symboliques et les points de jonction NTFS comme s'ils étaient leur cible.  Ceci inclut le fait qu'ils seront affichés comme des fichiers ou des dossiers, avec leur taille, leur date de dernière modification et leurs attributs.</p>
+<p class="p_Command"><span class="f_Command">Maintenir les alias DOS 8.3 </span><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/></p>
+<p class="p_Normal">Essaye de garder les mêmes noms courts de fichiers (DOS 8.3) en copiant des fichiers.</p>
+<p class="p_Command"><span class="f_Command">Copier les autorisations des fichiers NTFS (requiert les droits administrateur) </span><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/></p>
+<p class="p_Normal">Copie les descripteurs de sécurité des fichiers avec des systèmes de fichier NTFS sous Windows 2000 ou plus récent.  Cette fonctionnalité ne conserve pas les autorisations de fichiers modifiés à partir des sessions de Comparaison de Textes.</p>
+<p class="p_Command"><span class="f_Command">Copier les dates de création </span><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/></p>
+<p class="p_Normal">Préserve la date de création originale d'un fichier local lors de sa copie.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Rafraîchissement automatique</span></p>
+<p class="p_Normal">Cochez cette option pour rafraîchir périodiquement la comparaison de dossier.</p>
+
+</td></tr></table>
+
+</body>
+</html>

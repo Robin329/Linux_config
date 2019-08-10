@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>&quot;Öffnen mit&quot;-Objekt bearbeiten</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "dlgopenwithitem.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">&quot;Öffnen mit&quot;-Objekt bearbeiten</span></h1>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p class="p_Normal">Geben Sie einen Namen im Feld <span class="f_Command">Beschreibung</span> ein, der im &quot;Öffnen mit&quot;-Menü erscheinen wird.</p>
+<p class="p_Normal">Um ein Tastaturkürzel zu definieren, gehen Sie auf das Eingabefeld <span class="f_Command">Kürzel</span> und drücken Sie die gewünschte Tastenkombination.  Klicken Sie die Schaltfläche <span class="f_Command">Entfernen</span> an, um ein zugeordnetes Kürzel zu entfernen.</p>
+<p class="p_Normal">Geben Sie zur Ausführung der Anwendung eine geeignete <span class="f_Command">Befehlszeile</span> ein.  Sie darf zur Anwendung passende Befehlszeilenschalter enthalten.  Die folgenden Variablen werden dabei mit den angegebenen Informationen ersetzt:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%f</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Absoluter Pfad und Dateiname</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%l</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">(kleines L) Aktuelle Zeilennummer in Dateiansicht</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%n</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">nur Dateiname</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%p</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Absoluter Pfad</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%x</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Erweiterung, inklusive &quot;.&quot;</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%b</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Dateiname ohne Erweiterung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%F</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Pfad und Dateiname relativ zum Arbeitsordner</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:38px; padding:0px;"><p class="p_Normal">%P</p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Pfad relativ zum Arbeitsordner</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&quot;1&quot; und &quot;2&quot; kann an das Ende der Variablen gehängt werden, um sich auf die linke/erste oder rechte/zweite Datei zu beziehen (z.B. &quot;BCompare.exe %F2 %F1&quot;).  In jedem Fall, außer bei einem zweiten %f oder %l (für Rückwärtskompatibilität), wird sich das Auslassen einer Zahl auf die erste Datei beziehen, egal wieviele Male sie in der Befehlszeile aufgeführt ist.</p>
+<p class="p_Normal">Das Eingabefeld <span class="f_Command">Arbeitsordner</span> ermöglicht Ihnen anzugeben, wo das Programm laufen soll (der &quot;Ausführen in&quot;-Ordner).  Sollte das Feld leer sein, wird das Programm im selben Arbeitsordner laufen wie Beyond Compare.  Sie können einen bestimmten Ordner angeben oder einen der speziellen Werte <span class="f_CourierFixed">&lt;Elternordner&gt;</span> und <span class="f_CourierFixed">&lt;Basisordner&gt;</span> aus der aufklappbaren Liste auswählen.  <span class="f_CourierFixed">&lt;Elternordner&gt;</span> wird den Elternordner der ausgewählten Datei verwenden, während <span class="f_CourierFixed">&lt;Basisordner&gt;</span> den Basisordner der ausgewählten Datei verwendet (bzw. den Elternordner in einer Dateiansicht).</p>
+<p class="p_Normal">Verwenden Sie das Eingabefeld <span class="f_Command">Pfadtrennzeichen</span>, um alle Pfadtrennzeichen mit der angegebenen Zeichenfolge zu ersetzen.  Wenn das Feld leer bleibt, werden die üblichen Trennzeichen verwendet (z.B. umgekehrter Schrägstrich/Backslash (\) unter Windows).</p>
+<p class="p_Normal">Die Kontrollkästchen <span class="f_Command">Akzeptiert Dateien</span> und <span class="f_Command">Akzeptiert Ordner</span> steuern, ob die Anwendung Dateien, Ordner oder beides annimmt.  Tipp: Sie können Beyond Compare selbst als zusätzliche Anwendung für Ordner konfigurieren.  Auf diese Weise können Sie Ordner auswählen und in einer weiteren Instanz von Beyond Compare vergleichen.</p>
+<p class="p_Normal"><span class="f_Command">Aktualisieren wenn fertig</span> führt eine Schnellaktualisierung aus, sobald Beyond Compare mit der Abarbeitung der &quot;Öffnen mit&quot;-Liste fertig ist.</p>
+<p class="p_Normal">Wenn das Kontrollkästchen <span class="f_Command">Mehrfachinstanzen</span> markiert ist, können Sie mehrfache Dateien oder Dateipaare auswählen, und die Operation auf allen einmal pro Datei oder Dateipaar ausführen.  Mit dieser Option wird Beyond Compare prüfen, ob eine zweite Datei auf der Befehlszeile gegeben ist (z.B. &quot;%x2&quot;).  Wenn ja, wird die Anwendung auf Paaren zu einer Zeit ausgeführt; ansonsten wird das Paar getrennt, und einmal für jede einzelne Datei des Paares ausgeführt.</p>
+<p class="p_Normal"><span class="f_Command">Auf das Ende der vorherigen Instanz warten</span> veranlasst, dass Beyond Compare mit der Ausführung des nächsten Befehls wartet bis der vorherige Befehl abgeschlossen ist.</p>
+
+</td></tr></table>
+
+</body>
+</html>

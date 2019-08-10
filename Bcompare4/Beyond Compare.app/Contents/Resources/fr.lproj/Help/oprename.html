@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Renommer</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="renommer,renommer fichiers, dossiers" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "oprename.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Renommer</span></h1>
+<p class="p_Command2"><span class="f_Command2">Actions </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Renommer</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p class="p_Normal">Dans le menu <span class="f_Command">Actions</span>, la commande <span class="f_Command">Renommer</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="rename.png"/> renomme les fichiers et les dossiers sélectionnés.</p>
+<p class="p_Normal">Dans la sous-section <span class="f_Command">Action</span>, vous pouvez sélectionner un renommage soit <span class="f_Command">Compatible DOS</span> ou <span class="f_Command">Expressions régulières</span>.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Renommage DOS</span></p>
+<p class="p_Normal">Pour renommer des fichiers en utilisant des caractères génériques DOS, sélectionnez <span class="f_Command">Compatible DOS</span> dans le dialogue Renommer.  Dans le champ <span class="f_Command">Nouveau masque</span>, entrez le nouveau nom.</p>
+<p class="p_Normal">Si plusieurs fichiers ou dossiers sont sélectionnés, un masque de base est calculé, masque qui représente l'intersection commune de tous les noms.  Un astérisque (*) est utilisée pour représenter un ou plusieurs caractères, tandis qu'un point d'interrogation (?) est utilisé pour représenter un seul caractère.  Laissez ces caractères seuls, mais changez les autres pour produire des noms uniques pour chacun des fichiers ou des dossiers sélectionnés.</p>
+<p class="p_Normal">Exemples :</p>
+<p class="p_Normal">Supposez que vous avez sélectionné les fichiers suivants à renommer :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Si vous entrez &quot;abc?.bak&quot; dans le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Si vous entrez &quot;xyz?.txt&quot; pour le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Renommage via une expression régulière</span></p>
+<p class="p_Normal">Pour renommer des fichiers en utilisant des <a href="regular_expression_reference.html" class="topiclink">expressions régulières compatibles Perl</a>, cochez <span class="f_Command">Expressions régulières</span> dans le dialogue Renommer.  Dans le champ <span class="f_Command">Ancien masque</span>, entrez une expression régulière qui correspond au nom de fichier original.  Dans le champ <span class="f_Command">Nouveau masque</span>, entrez un modèle utilisé pour générer un nouveau nom de fichier.</p>
+<p class="p_Normal">Exemples :</p>
+<p class="p_Normal">Supposez que vous avez sélectionné les fichiers suivants à renommer :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Si vous entrez &quot;txt&quot; pour l'ancien masque et &quot;bak&quot; pour le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Si vous entrez &quot;.*(\d\.txt)&quot; pour l'ancien masque et &quot;xyz$1&quot; pour le nouveau masque, les fichiers seront renommés en :</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

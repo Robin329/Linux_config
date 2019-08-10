@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Zeitsteuerung eines Skripts</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="geplanter Task,Skripte,Skripte Zeitsteuerung" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "scheduling_a_script.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Zeitsteuerung eines Skripts</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="sample_scripts.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="scripts.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="settings_reference.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/></p>
+<p class="p_Normal">Sie können Beyond Compares Skript-Verarbeitung zur Ausführung bestimmter Tätigkeiten ohne Benutzerinteraktion verwenden, wie Synchronisation von Ordnern.  Um beispielsweise eine Sicherung des Ordners &quot;C:\Mein Ordner&quot; zu automatisieren, geben Sie die folgenden Skript-Befehle in einen Texteditor ein:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">load &quot;C:\</span><span class="f_CourierFixed">Mein Ordner</span><span class="f_CourierFixed">&quot; &quot;C:\</span><span class="f_CourierFixed">Meine Sicherungen</span><span class="f_CourierFixed">&quot;</span></p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">expand all</span></p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">select left.newer.files left.orphan.files</span></p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">copy left-&gt;right</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Normal">Speichern Sie diese Datei unter <span class="f_CourierFixed">&quot;C:\Meine Skripte\Sync.txt&quot;</span>.</p>
+<p class="p_Normal">Um ein Beyond Compare Skript zu einer gewünschten Zeit ablaufen zu lassen:</p>
+<p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 24px; margin: 3px 0px 14px 0px;"><span style="font-size:10pt; font-family: 'Verdana';color:#000000;display:inline-block;width:24px;margin-left:-24px">1.</span>Wählen Sie in der Windows Aufgabenplanung <span class="f_Command">Aktion &gt; Einfache Aufgabe erstellen</span> um den Aufgabenassistenten zu erhalten.</p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 24px; margin: 3px 0px 14px 0px;"><span style="font-size:10pt; font-family: 'Verdana';color:#000000;display:inline-block;width:24px;margin-left:-24px">2.</span>In <span class="f_Command">Aktion</span> wählen Sie <span class="f_Command">Programm starten</span>.</p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 24px; margin: 3px 0px 14px 0px;"><span style="font-size:10pt; font-family: 'Verdana';color:#000000;display:inline-block;width:24px;margin-left:-24px">3.</span>In <span class="f_Command">Programm/Skript</span> wählen Sie die Beyond Compare 4 Anwendung.</p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 24px; margin: 3px 0px 14px 0px;"><span style="font-size:10pt; font-family: 'Verdana';color:#000000;display:inline-block;width:24px;margin-left:-24px">4.</span>Im Eingabefeld <span class="f_Command">Argumente hinzufügen</span> fügen Sie eine Referenz zu Ihrer Skriptdatei hinzu:<br />
+<span class="f_CourierFixed">@</span><span class="f_CourierFixed">Synchronisation</span><span class="f_CourierFixed">.txt</span></p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 24px; margin: 3px 0px 14px 0px;"><span style="font-size:10pt; font-family: 'Verdana';color:#000000;display:inline-block;width:24px;margin-left:-24px">5.</span>In <span class="f_Command">Starten in</span> wählen Sie den Skriptordner:<br />
+<span class="f_CourierFixed">C:\</span><span class="f_CourierFixed">Meine Skripte</span></p><p class="p_Normal">Wir empfehlen Ihnen einen Log-Befehl in Ihr Skript einzubauen.  Sollten Sie mit Ihrem Skript Schwierigkeiten haben, überprüfen Sie das Fehler-Log für geplante Tasks in Ihrem Windows-Ordner: &quot;SchedLgU.txt&quot;.</p>
+
+</td></tr></table>
+
+</body>
+</html>

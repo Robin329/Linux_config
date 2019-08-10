@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>FTP-Profil-Übertragungseinstellungen</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="ASCII-Modus Übertragung,Binärmodus Übertragung,Übertragungen komprimieren,Dateinamenkonvertierung,FTP,FTP Übertragungseinstellungen,Download/Upload-Geschwindigkeit begrenzen,Zeitstempel,Zeitstempel beibehalten beim Upload" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "profileftptransfer.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">FTP-Profil-Übertragungseinstellungen</span></h1>
+<p class="p_Command2"><span class="f_Command2">FTP-Profil </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Übertragen</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="profileftplisting.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="profileftp.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="profileamazons3.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Diese Einstellungen steuern wie Dateien von und zu dem FTP-Server übertragen werden.</p>
+<p class="p_Command"><span class="f_Command">Transfertyp</span></p>
+<p class="p_Normal">FTP-Standorte können Daten auf zwei Arten übertragen:  ASCII und Binär.  ASCII wird für die Übertragung von Textdateien verwendet, die keine Sonderzeichen enthalten.  Der FTP-Server wird automatisch Anpassungen hinsichtlich Zeilenendungen vornehmen, die im ASCII-Modus notwendig sind.  Der ASCII-Modus bewältigt auch Übertragungen von Großrechnern, indem EBCDIC in ANSI konvertiert und Zeilenendezeichen am Ende von Übertragungssätzen angefügt werden.  Binär wird für Übertragungen aller anderen Dateien verwendet, inkl. Bilder, Musik, Word Dokumente usw.  Im Binär-Modus werden während der Übertragung keine Änderungen an den Dateien vorgenommen.</p>
+<p class="p_Normal">Das Setzen einer der Transfertypen <span class="f_Command">ASCII</span> oder <span class="f_Command">Binär</span> erzwingt die Übertragung aller Dateien in dem gewählten Modus.  Wenn der Transfertyp auf <span class="f_Command">Autom.</span> gestellt ist, wird Beyond Compare automatisch den Transfertyp anhand der Dateierweiterung bestimmen.</p>
+<p class="p_Command"><span class="f_Command">Zeitstempel beim Hochladen kopieren</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um den entfernten Zeitstempel an den Zeitstempel der Quelle anzupassen.  Entfernen Sie diese Markierung nur, wenn es Probleme mit dem Server gibt.</p>
+<p class="p_Command"><span class="f_Command">Unix-Rechte beim Hochladen kopieren</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um die entfernten Unix-Rechte an die Unix-Rechte der Quelle anzupassen.  Entfernen Sie diese Markierung nur, wenn es Probleme mit dem Server gibt.</p>
+<p class="p_Command"><span class="f_Command">Übertragungen komprimieren (MODE Z)</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um Komprimierung zur Beschleunigung der Übertragung anzuwenden, sofern dieses vom Server unterstützt wird.  Dies könnte allerdings Übertragungen über schnelle Verbindungen verlangsamen.</p>
+<p class="p_Command"><span class="f_Command">Download beschränken (Kbps)</span>, <span class="f_Command">Upload beschränken (Kbps)</span></p>
+<p class="p_Normal">Spezifizieren Sie, wieviel Bandbreite Beyond Compare für jede Verbindung beanspruchen darf.</p>
+<p class="p_Command"><span class="f_Command">Schnellere Uploads zu älteren OpenSSH-Servern erzwingen</span></p>
+<p class="p_Normal">Markieren Sie diese Option, um größere Übertragungspuffer und Pipelining auf OpenSSH-Servern (älter als OpenSSH 3.9) zu verwenden.  Dies kann die Übertragungsgeschwindigkeit signifikant erhöhen, ist jedoch nicht mit allen Servern kompatibel, und Fehler könnten nicht unbedingt offensichtlich werden.  Machen Sie einen binären Inhaltsvergleich, um die ersten Übertragungen zu überprüfen, nachdem Sie diese Option aktiviert haben.</p>
+<p class="p_Normal"><img width="12" height="12" style="margin:0;width:12px;height:12px;border:none" src="note.png"/><span class="f_Subtitle">Hinweis:  </span>Sollten Sie Unterstützung für die Einstellungen auf dieser Seite benötigen, dann wenden Sie sich bitte an Ihren Systemadministrator.</p>
+
+</td></tr></table>
+
+</body>
+</html>

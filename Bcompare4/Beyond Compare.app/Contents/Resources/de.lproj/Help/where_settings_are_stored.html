@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Wo die Einstellungen auf Ihrem Rechner gespeichert werden</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Ablageort der Programmeinstellungen,portable Installation,Einstellungen,Einstellungen Ablageort von,gemeinsame Nutzung von Beyond Compare in einem Netzwerk,gespeicherte Einstellungen" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "where_settings_are_stored.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Wo die Einstellungen auf Ihrem Rechner gespeichert werden</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="dlgsourcecontrolmanager.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="settings_reference.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="commands_reference.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Beyond Compare speichert Ihre Sitzungen, selbsterstellte Dateiformate und sonstige Präferenzen als XML-Dateien in seinem Einstellungen-Ordner.  Eine schnelle Möglichkeit, diesen zu finden, ist <span class="f_Command">Hilfe &gt; Unterstützung</span> zu wählen, und dann die Verknüpfung <span class="f_Command">Einstellungen-Ordner untersuchen</span> am unteren Rand des Dialoges anzuklicken.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Standardinstallation</span></p>
+<p class="p_Normal"><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/> In Windows ist der Einstellungenordner innerhalb des Anwendungsdatenordners.  Der Ort ist von Ihrer Windows-Version abhängig.  Beispielsweise ist der Einstellungenordner unter Windows Vista hier:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">C:\Users\&lt;</span><span class="f_CourierFixed">Benutzername</span><span class="f_CourierFixed">&gt;\AppData\Roaming\Scooter Software\Beyond Compare 4</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Normal">Beachten Sie, dass sich dieser Ablageort zwischen verschiedenen Anwendern auf demselben Rechner unterscheidet.</p>
+<p class="p_Normal"><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="mac.png"/> Bei Mac ist der Einstellungenordner:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">~/Library/Application Support/Beyond Compare</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Normal">Sollten Sie mehrere Hauptversionen installieren wollen, dann können Sie diesen Ordner folgendermaßen umbenennen:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">~/Library/Application Support/Beyond Compare 4</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Normal"><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="linux.png"/> Bei Linux ist der Einstellungenordner:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">~/$XDG_CONFIG_HOME/bcompare</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Normal">Sollte $XDG_CONFIG_HOME nicht definiert sein, dann ist der Einstellungenordner:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">~/.config/bcompare</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Normal">Sollte eine ältere Version von Beyond Compare installiert sein, dann ist der Einstellungenordner:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">~/.beyondcompare</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Normal">Sollten Sie mehrere Hauptversionen installieren wollen, dann können Sie die Hauptversion an den Einstellungenordnernamen wie folgt anhängen:</p>
+<p class="p_IndentedCode"><span class="f_CourierFixed">~/$XDG_CONFIG_HOME/bcompare4</span></p>
+<p class="p_IndentedCode"><span class="f_IndentedCode">&nbsp;</span></p>
+<p class="p_Subtitle"><span class="f_Subtitle">Portable Installation </span><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/></p>
+<p class="p_Normal">Sollten Sie eine portablere Installation bevorzugen, mit Programm und Einstellungen an derselben Stelle, dann können Sie Ihre Einstellungsdateien in denselben Ordner wie das Programm kopieren.  Portable Installationen ermöglichen Ihnen, die Einstellungen auf einem Rechner für alle Anwender nutzbar zu machen, oder Ihre Einstellungen mitzunehmen.  Sollten Sie keine Einstellungsdateien zum Kopieren haben, können Sie eine leere Datei namens <span class="f_CourierFixed">BCState.xml</span> in dem Ordner erstellen.</p>
+
+</td></tr></table>
+
+</body>
+</html>

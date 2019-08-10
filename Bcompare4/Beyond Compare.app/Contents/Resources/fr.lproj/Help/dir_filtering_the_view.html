@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Filtrage de l'affichage de Comparaison de Dossiers</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="filtres d'affichage,filtres de fichier,filtres,ignorer,ignorer structure de dossier" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "dir_filtering_the_view.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Filtrage de l'affichage de Comparaison de Dossiers</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="dir_how_to_compare.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="viewdir.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="dir_reconciling_differences.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Il y a trois types globaux de filtres que vous pouvez utiliser pour contrôler l'étendue de la session de Comparaison de Dossiers :  <span class="f_Definition">Filtres de fichier</span> qui inclut ou exclut les fichiers en se basant sur leur nom ou attributs, <span class="f_Definition">Filtres d'affichage</span> qui affiche ou cache les lignes de la comparaison en se basant sur l'état de comparaison, et <span class="f_Definition">Filtres d'affichage de dossier</span> qui contrôle lorsque les dossiers sont affichés.</p>
+<p class="p_Normal">Par exemple, vous pouvez positionner le filtre d'affichage à <span class="f_Command">Affichage &gt; Afficher les plus récents du côté gauche</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="dirfavleftnewer.png"/> pour afficher seulement les fichiers qui sont plus récents dans le côté gauche de la comparaison.  Ou vous pouvez définir le filtre de fichier pour exclure les fichiers *.bak si vous ne voulez pas les voir ni les manipuler.</p>
+<p class="p_Normal">Par défaut, les commandes qui s'appliquent sur le contenu des dossiers sélectionnés (telles que Copier, Déplacer, Supprimer, etc.) respecteront les filtres actifs.  Cela étant, si la sélection inclut un dossier, le contenu filtré du dossier sera sauté.  Pour changer ce comportement par défaut, sélectionnez <span class="f_Command">Outils &gt; Options</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="options.png"/>, allez à la page <span class="f_Command">Opération sur fichier</span>, et cochez <span class="f_Command">Inclure par défaut les éléments cachés</span>.  Dans chaque cas, les dialogues d'action vous permettent de passer outre du comportement par défaut au cas par cas.</p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Affichage &gt; Supprimer les filtres</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="suppressfilters.png"/> pour supprimer temporairement les filtres de fichier et les filtres d'affichage.  Les fichiers et dossiers qui étaient cachés apparaîtront colorés en turquoise (bleu-vert) et pourront être traités.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Filtres de fichier</span></p>
+<p class="p_Normal">Vous pouvez spécifier le type des fichiers que vous souhaitez inclure dans (ou exclure de) la session.  Par exemple, si vous comparez des projets Delphi, vous pouvez inclure des types de fichier tels que *.pas, *.dfm et *.dpr.  Ou vous pouvez inclure tous les fichiers excepté *.dcu et *.~* en excluant ces types de fichier.</p>
+<p class="p_Normal">Pour spécifier un filtre simple &quot;inclure ces types&quot;, utilisez le champ <span class="f_Command">Filtres</span> sur la barre d'outils.  Entrez les types de fichier séparés par des points-virgules, ou utilisez la liste déroulante pour sélectionner les valeurs par défaut.  Incluez un signe moins (-) au début des fichiers devant être exclus.</p>
+<p class="p_Normal"><img width="309" height="27" style="margin:0;width:309px;height:27px;border:none" src="toolbarfilefilters.png"/></p>
+<p class="p_Normal">En plus de ces simple filtres par caractère générique, vous pouvez spécifier des filtres plus complexes qui incluent ou excluent des fichiers ou des dossiers par nom.  Sélectionnez <span class="f_Command">Session &gt; Paramètres de session</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="sessionedit.png"/>, et allez à l'onglet <span class="f_Command">Filtres de nom</span>.  Ou cliquez simplement sur le bouton <span class="f_Command">Filtres</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="filters.png"/> de la barre d'outils.</p>
+<p class="p_Normal">Les fichiers peuvent également être filtrés sur leur date de modification, taille, attributs ou contenu texte.  Dans le dialogue Paramètres de session, aller à l'onglet <span class="f_Command">Autres filtres</span>.  (Les dossiers ne sont pas directement filtrés sur leurs attributs, mais sont affectés par le filtrage de leur contenu.)</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Filtres d'affichage</span></p>
+<p class="p_Normal">Les filtres d'affichage limitent la visualisation à certains résultats de comparaison.  Les résultats de comparaison sont déterminés par les règles de comparaison de la session.  Par exemple, vous pouvez choisir <span class="f_Command">Affichage &gt; Afficher les différences</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="favdiff.png"/> pour enlever tous les fichiers identiques de telle façon que vous pouvez vous concentrer sur les non-correspondances.</p>
+<p class="p_Normal" style="margin: 10px 0px 14px 0px;"><span class="f_Subtitle">Filtres d'affichage de dossier</span></p>
+<p class="p_Normal">Par défaut, les dossiers apparaissent si au moins un fichier qu'ils contiennent est visible.  Toutefois, vous pouvez basculer vers un des autres filtres d'affichage de dossier.</p>
+<p class="p_Normal"><span class="f_Command">Affichage &gt; Toujours afficher les dossiers</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="dirshowall.png"/> entraîne l'affichage de tous les dossiers (sauf s'ils ont été explicitement exclus par les filtres de fichier), sans tenir compte de la sélection de l'autre filtre d'affichage.</p>
+<p class="p_Normal"><span class="f_Command">Affichage &gt; Comparer la structure des fichiers et du dossier</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="dircomparestructure.png"/> entraîne les dossiers à suivre les filtres d'affichage.  Par exemple, si le filtre d'affichage principal est <span class="f_Command">Afficher tout</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="favall.png"/>, alors tous les dossiers apparaissent.  Si c'est <span class="f_Command">Afficher les orphelins</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="dirfavorphan.png"/>, uniquement les dossiers orphelins et les dossiers qui contiennent des fichiers orphelins sont affichés.</p>
+<p class="p_Normal"><span class="f_Command">Affichage &gt; Comparer les fichiers uniquement</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="dircomparefilesonly.png"/> supprime tous les dossiers vides, aussi bien ceux qui sont réellement vides, que ceux dont tout le contenu est caché par une autre filtre d'affichage ou de fichier.</p>
+<p class="p_Normal"><span class="f_Command">Affichage &gt; Ignorer la structure des dossiers</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="dirflatten.png"/> cache l'arborescence de dossier et aligne les fichiers sans tenir compte des sous-dossiers dans lesquels ils sont.</p>
+<p class="p_SingleSpaced"><span class="f_SeeAlso">Voir également</span></p>
+<p class="p_SingleSpaced"><a href="sessiondirnamefilter.html" class="topiclink">Filtres de nom de Comparaison de Dossiers</a></p>
+<p class="p_SingleSpaced"><a href="sessiondirotherfilters.html" class="topiclink">Autres filtres de Comparaison de Dossiers</a></p>
+<p class="p_SingleSpaced"><a href="display_filters.html" class="topiclink">Filtres d'affichage</a></p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Paramètres de comparaison de la Fusion de Dossiers</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="attributs,attributs comparer,comparer,comparer attributs,comparer contenu de fichier,comparer taille de fichier,comparer horodatages,comparer information de versions,critères de comparaison,critères de comparaison paramètre,Fusion de Dossiers,Fusion de Dossiers règles,horodatages,horodatages comparer,version,version comparer les informations de version" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "sessiondirmergecomparison.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Paramètres de comparaison de la Fusion de Dossiers</span></h1>
+<p class="p_Command2"><span class="f_Command2">Session </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Paramètres de session </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Comparaison</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="sessiondirmergespecs.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="sessiondirmerge.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="sessiondirmergehandling.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><img width="27" height="12" style="margin:0;width:27px;height:12px;border:none" src="pro.png"/></p>
+<p class="p_Normal">Ces paramètres contrôlent ce qui doit être considéré comme une différence dans une session de dossiers.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Tests rapides</span></p>
+<p class="p_Normal">Ces tests de comparaison peuvent être exécutés simplement en lisant les dossiers et sont beaucoup plus rapides que les tests qui lisent les fichiers individuellement.</p>
+<p class="p_Command"><span class="f_Command">Comparer la taille de fichier</span></p>
+<p class="p_Normal">Marque les fichiers comme différents si les tailles diffèrent.</p>
+<p class="p_Command"><span class="f_Command">Comparer les horodatages</span></p>
+<p class="p_Normal">Compare les dates et heures de dernière modification des fichiers.  Les horodatages doivent différer de plus de secondes que la <span class="f_Command">tolérance en seconde</span> pour être considérés comme des non-correspondances.</p>
+<p class="p_Indented"><span class="f_Command">Ignorer la différence d'heure d'été</span> ignore des différences exactes d'une heure.  Ceci est utile pour traiter la façon dont différents systèmes de fichier traitent l'heure d'été.</p>
+<p class="p_Indented"><span class="f_Command">Ignorer les différences de fuseaux horaires</span> ignore les différences d'horodatage qui sont un multiple exact d'une heure.</p>
+<p class="p_Command"><span class="f_Command">Comparer la casse des noms de fichier</span></p>
+<p class="p_Normal">Marque les fichiers comme différents si des casses de caractère diffèrent.</p>
+<p class="p_Command"><span class="f_Command">Comparer les attributs de fichier </span><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/></p>
+<p class="p_Indented"><span class="f_Command">Archive</span> compare l'attribut archive des fichiers.  Comme la simple copie d'un fichier peut changer son attribut archive, vous devriez normalement décocher cette option.</p>
+<p class="p_Indented"><span class="f_Command">Système</span> compare l'attribut système des fichiers.</p>
+<p class="p_Indented"><span class="f_Command">Caché</span> compare l'attribut caché des fichiers.</p>
+<p class="p_Indented"><span class="f_Command">Lecture seule</span> compare l'attribut lecture seule des fichiers.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Tests qui requièrent la lecture des fichiers</span></p>
+<p class="p_Command"><span class="f_Command">Comparer les contenus</span></p>
+<p class="p_Normal">Active les comparaisons de taille et relatives au contenu.</p>
+<p class="p_Indented"><span class="f_Command">Comparaison de CRC</span> compare des fichiers en utilisant leurs valeurs CRC.</p>
+<p class="p_Indented"><span class="f_Command">Comparaison binaire</span> compare des fichiers octet-par-octet.</p>
+<p class="p_Indented"><span class="f_Command">Comparaison basée sur des règles</span> compare des fichiers en se basant sur leur association de <a href="file_formats.html" class="topiclink">format de fichier</a>.  Vous permet d'ignorer les différences de fins de ligne, des espaces blancs ou des commentaires de code source.</p>
+<p class="p_Indented"><span class="f_Command">Sauter si des tests rapides montrent que les fichiers sont identiques</span> améliore la vitesse de comparaison en exécutant seulement la comparaison la plus lente, mais la plus approfondie lorsque les horodatages sont différents.</p>
+<p class="p_Command"><span class="f_Command">Comparer les versions </span><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/></p>
+<p class="p_Normal">Compare les informations de version, typiquement stockées dans les fichiers d'application (.exe, .dll, .ocx, etc).</p>
+<p class="p_Command"><span class="f_Command">Ne pas prendre en compte les résultats de test rapide</span></p>
+<p class="p_Normal">Marque des fichiers comme correspondants si une comparaison de contenu trouve qu'ils correspondent même s'il y a des différences d'horodatages ou d'autres tests rapides.</p>
+
+</td></tr></table>
+
+</body>
+</html>

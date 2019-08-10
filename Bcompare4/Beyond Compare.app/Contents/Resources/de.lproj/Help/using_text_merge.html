@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Text-Merge verwenden</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "using_text_merge.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Text-Merge verwenden</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="viewtextmerge.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="viewtextmerge.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="viewdata.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal"><img width="27" height="12" style="margin:0;width:27px;height:12px;border:none" src="pro.png"/></p>
+<p class="p_Normal">Wenn Beyond Compare einen Vergleich durchgeführt hat, wird das Programm bis zu vier Bereiche anzeigen:  Den linken, mittleren und rechten Bereich im oberen Teil des Fensters, und einen Ausgabebereich im unteren Teil.  Wenn Sie einen Mittelbereich einbeziehen, ist Beyond Compare in der Lage, beide Dateien mit ihm zu vergleichen, und Änderungen als Hinzufügungen, Änderungen oder Löschungen auf den entsprechenden Seiten zu kennzeichnen.  Änderungen auf der linken Seite werden in Türkis markiert, und Änderungen auf der rechten Seite in Magenta.  Beidseitige Änderungen werden als Konflikt betrachtet, welche rot markiert werden.  (Wenn Sie es wünschen, können Sie <a href="optionsfilecolor.html" class="topiclink">das Farbschema ändern</a>.)</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Konflikte</span></p>
+<p class="p_Normal">Immer dann, wenn es unterschiedliche Änderungen auf der linken und auf der rechten Seite gibt, die auf derselben Zeile oder innerhalb zweier Zeilen voneinander auftreten, werden diese Abschnitte als Konflikt angesehen, der sodann in allen drei Eingabebereichen rot gekennzeichnet wird.  Die Ausgabe wird als Konflikt bezeichnet.  Wenn auf beiden Seiten (links und rechts) dieselbe Änderung vorgenommen wurde, wird dies nicht als Konflikt betrachtet.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Anzeigefilter</span></p>
+<p class="p_Normal">Beim Zusammenführen werden die traditionellen Anzeigefilter von Beyond Compare in neue gewechselt, die den Merge-Status (Zusammenführungsstatus) jeder Zeile angeben.  Die Verwendung dieser Filter ermöglicht die Einschränkung der Anzeige auf nur Konflikte, oder nur Änderungen auf der einen Seite, oder der anderen.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Zusammenführen (Merge)</span></p>
+<p class="p_Normal">Sie können sowohl in den Eingabe- als auch Ausgabebereichen von Unterschied zu Unterschied navigieren.  Dabei werden die Fenster immer synchron bleiben.  Wenn Sie auf einem Unterschied stehen, können Sie die Befehle <span class="f_Command">Von links übernehmen</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="filetakesectionleft.png"/>, <span class="f_Command">Von Mitte übernehmen</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="filetakesectioncenter.png"/> und <span class="f_Command">Von rechts übernehmen</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="filetakesectionright.png"/> verwenden, um die Änderungen von links oder rechts zu übernehmen, oder das mittlere Original beizubehalten.  Die &quot;Übernehmen&quot;-Befehle stehen sowohl in der Symbolleiste zur Verfügung, als auch im Kontextmenü jedes Bereiches und als Schaltflächen an den jeweiligen Abschnitten im Ausgabebereich.  Beim ersten Laden wird der Ausgabebereich mit dem Mittelbereich übereinstimmen, außer wenn automatisch nicht-konfliktbehaftete Änderungen übernommen werden können.  Jede Änderung wird entsprechend ihres Herkunftseingabebereiches farblich gekennzeichnet.  Beim Zusammenführen können Sie den Ausgabebereich auch direkt bearbeiten, was die Farbe des Abschnittes in Gelb ändert.  Wenn Sie die Änderungen auf die ursprünglichen Werte zurückstellen möchten, verwenden Sie einfach erneut den &quot;Übernehmen&quot;-Befehl.</p>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Umbenennen</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="umbenennen,umbenennen Dateien, Ordner" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "oprename.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Umbenennen</span></h1>
+<p class="p_Command2"><span class="f_Command2">Aktionen </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Umbenennen</span></p>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p class="p_Normal">Im Menü <span class="f_Command">Aktionen</span> dient der Befehl <span class="f_Command">Umbenennen</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="rename.png"/> dazu, die ausgewählten Dateien und Ordner umzubenennen.</p>
+<p class="p_Normal">Im Unterabschnitt <span class="f_Command">Aktion</span> können Sie entweder <span class="f_Command">DOS-kompatibel</span> oder <span class="f_Command">Reguläre Ausdrücke</span> zum Umbenennen wählen.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">DOS-Umbenennungen</span></p>
+<p class="p_Normal">Um Dateien unter Verwendung von DOS-Wildcards umzubenennen, wählen Sie <span class="f_Command">DOS-kompatibel</span> im Umbenenndialog.  Geben Sie im Eingabefeld <span class="f_Command">Neue Maske</span> den neuen Namen ein.</p>
+<p class="p_Normal">Wenn mehrere Dateien oder Ordner ausgewählt wurden, wird bereits eine Maske berechnet, die die Gemeinsamkeiten aller Dateien repräsentiert.  Ein Sternchen (*) wird verwendet um einen oder mehrere Zeichen darzustellen, während ein Fragezeichen (?) verwendet wird um ein einzelnes Zeichen zu repräsentieren.  Lassen Sie diese Zeichen, wie sie sind, aber ändern Sie andere, um eindeutige Namen für jede der ausgewählten Dateien oder Ordner zu erstellen.</p>
+<p class="p_Normal">Beispiele:</p>
+<p class="p_Normal">Angenommen, Sie haben die folgenden Datei zum Umbenennen ausgewählt:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Wenn Sie &quot;abc?.bak&quot; als neue Maske eingeben, werden die Dateien folgendermaßen umbenannt:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Wenn Sie &quot;xyz?.txt&quot; als neue Maske eingeben, werden die Dateien folgendermaßen umbenannt:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Umbenennen mit regulären Ausdrücken</span></p>
+<p class="p_Normal">Um Dateien unter Verwendung <a href="regular_expression_reference.html" class="topiclink">Perl-kompatibler regulärer Ausdrücke</a> umzubenennen, wählen Sie <span class="f_Command">Reguläre Ausdrücke</span> im Umbenenndialog.  Tragen Sie in das Eingabefeld <span class="f_Command">Alte Maske</span> einen regulären Ausdruck passend zum originalen Dateinamen ein.  Geben Sie in das Eingabefeld <span class="f_Command">Neue Maske</span> eine Vorlage ein, die zur Generierung neuer Dateinamen dient.</p>
+<p class="p_Normal">Beispiele:</p>
+<p class="p_Normal">Angenommen, Sie haben die folgenden Datei zum Umbenennen ausgewählt:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.txt</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Wenn Sie &quot;txt&quot; als alte Maske und &quot;bak&quot; als neue Maske eingeben, so werden die Dateien folgendermaßen umbenannt:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc1.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc2.bak</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; abc3.bak</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Wenn Sie &quot;.*(\d\.txt)&quot; als alte Maske eingeben und &quot;xyz$1&quot; als neue Maske, so werden die Dateien folgendermaßen umbenannt:</p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz1.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz2.txt</span></p>
+<p class="p_SingleSpaced"><span class="f_CourierFixed"> &nbsp; &nbsp; xyz3.txt</span></p>
+
+</td></tr></table>
+
+</body>
+</html>

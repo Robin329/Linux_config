@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Amazon S3 Profileinstellungen</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Amazon S3,Amazon S3 Profil,Profile,Profile Amazon S3" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "profileamazons3.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Amazon S3 Profileinstellungen</span></h1>
+<p class="p_Command2"><span class="f_Command2">Amazon S3 Profil </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Allgemeines</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="profileftptransfer.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="dlgprofilemanager.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="profiledropbox.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Command"><span class="f_Command">Authentifizierungstyp</span></p>
+<p class="p_Normal">Steuert woher Credentials geladen werden.</p>
+<p class="p_Command"><span class="f_Command">Gespeicherte S3 Credentials</span></p>
+<p class="p_Normal">Gespeicherte <span class="f_Command">Zugriffsschlüssel-ID</span> und <span class="f_Command">Geheimer Zugriffsschlüssel</span> verwenden.</p>
+<p class="p_Command"><span class="f_Command">Aus der Credentials-Datei laden</span></p>
+<p class="p_Normal">Den Zugriffsschlüssel und geheimen Zugriffsschlüssel aus einer AWS SDK Credentials-Datei oder AWS CLI Config-Datei laden.  Sofern vorhanden, werden Security Tokens für zeitlich begrenzte Credentials verwendet.  Die Standard-Credentials-Datei ist %UserProfile%\.aws\credentials <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="windows.png"/> oder ~/.aws/credentials <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="mac.png"/><img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="linux.png"/>, aber Beyond Compare wird wenn nötig die AWS CLI &quot;config&quot; Datei verwenden, und die AWS_SHARED_CREDENTIALS_FILE und AWS_CONFIG_FILE Umgebungsvariablen berücksichtigen, sofern sie existieren.  Das Profil sollte eines sein, welches in der Datei existiert.  Wenn das Feld leer bleibt, wird &quot;Standard&quot; verwendet.</p>
+<p class="p_Command"><span class="f_Command">Aus den Umgebungsvariablen laden</span></p>
+<p class="p_Normal">Den Zugriffsschlüssel, geheimen Zugriffsschlüssel und das Security-Token aus AWS_* Umgebungsvariablen laden.  Zuerst wird nach den Variablen AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY sowie AWS_SESSION_TOKEN gesucht.  Wenn diese nicht vorhanden sind, wird ein Profil aus der Standard-Credentials-Datei (wie oben) ausgewählt.  Die AWS_PROFILE Variable kann zur Auswahl eines Nicht-Standard-Profils verwendet werden.</p>
+<p class="p_Command"><span class="f_Command">Bucket (optional)</span></p>
+<p class="p_Normal">Dies kann zur Auswahl eines Bucket für den Fall verwendet werden, dass Sie keine Berechtigung haben, alle Buckets aufzulisten.</p>
+<p class="p_Normal">Die <span class="f_Command">Beschreibung</span> kann beliebigen Text enthalten.</p>
+
+</td></tr></table>
+
+</body>
+</html>

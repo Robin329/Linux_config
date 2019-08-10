@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Modifier une définition de colonne</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "dlgdatacolhandling.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#7B6B45;">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Modifier une définition de colonne</span></h1>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top"><td style="text-align:left">
+<p class="p_Normal">Le dialogue Traitement de colonne vous permet de définir les options pour chaque colonne de comparaison.  Un sous-ensemble de ce dialogue est utilisé pour définir le traitement par défaut de toutes les colonnes.</p>
+<p class="p_Normal">Spécifiez le <span class="f_Command">Nom</span> à afficher dans l'entête de la colonne de comparaison.  Si aucun n'est spécifié, un nom automatique est utilisé.</p>
+<p class="p_Normal">Cochez <span class="f_Command">Clé</span> pour que les données dans cette colonne contrôlent le tri et l'alignement de ligne.  Si vous avez plus d'une colonne clé, la priorité pour le tri sera donnée à la colonne la plus en haut dans la liste.</p>
+<p class="p_Normal">Cochez <span class="f_Command">Utiliser les valeurs par défaut</span> pour utiliser le traitement de colonne par défaut tel que défini pour cette session.</p>
+<p class="p_Normal">Sélectionnez le <span class="f_Command">Type</span> approprié pour la colonne :</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:78px; padding:0px;"><p class="p_Command"><span class="f_Command">Détecté</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Détermine automatiquement le type de colonne basé sur les données des fichiers.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:78px; padding:0px;"><p class="p_Command"><span class="f_Command">Booléen</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Les valeurs de colonne sont &quot;Vrai&quot; ou &quot;Faux&quot; ou numériques.  Zéro est équivalent à Faux, et n'importe quelle valeur non nulle est Vrai.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:78px; padding:0px;"><p class="p_Command"><span class="f_Command">Date</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">La colonne contient des valeurs date-heure dans n'importe quel format usuel.  La comparaison ignore les différences de format.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:78px; padding:0px;"><p class="p_Command"><span class="f_Command">Numérique</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">Les valeurs de colonne sont interprétées comme des valeurs numériques réelles.  La comparaison ignore les différences de format.  Par exemple, 0,00 et 0 sont considérées comme identiques.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:78px; padding:0px;"><p class="p_Command"><span class="f_Command">Texte</span></p>
+</td>
+<td style="vertical-align:top; padding:0px;"><p class="p_Normal">La colonne contient des données textuelles.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Cochez <span class="f_Command">Non important</span> pour indiquer que cette colonne est non importante pour votre comparaison.  (Les différences non importantes sont colorées en bleu au lieu de rouge, ou sont toutes ignorées ensemble en utilisant la fonctionnalité <span class="f_Command">Ignorer les différences non importantes</span> <img width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="insigignored.png"/>.)</p>
+<p class="p_Normal">Utilisez <span class="f_Command">Tolérance de date</span> pour autoriser dans cette colonne des valeurs de date-heure qui diffèrent par une valeur donnée avant d'être considérées comme une différence importante.</p>
+<p class="p_Normal">Définir la valeur de <span class="f_Command">Tolérance numérique</span> qui autorise des nombres à différer d'une plus grande quantité avant d'être considérés comme une différence importante.</p>
+<p class="p_Normal">L'option <span class="f_Command">Est important, sauf pour</span> régit les colonnes qui sont définies ou détectées comme Texte.  Cochez <span class="f_Command">Casse de caractère (ABC = abc)</span> si les différences de casse (ie., capitalisation) sont non importantes.  Cochez <span class="f_Command">Espace blanc</span> pour considérer des différences d'espace blanc (le nombre de blancs avant, après ou entre les mots) comme non importantes.</p>
+
+</td></tr></table>
+
+</body>
+</html>

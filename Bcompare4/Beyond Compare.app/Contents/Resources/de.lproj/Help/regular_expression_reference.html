@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Referenz Regulärer Ausdrücke</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Reguläre Ausdrücke" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "regular_expression_reference.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Referenz Regulärer Ausdrücke</span></h1>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="scripting_reference.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="welcome.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="glossary.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Reguläre Ausdrücke sind eine leistungsstarke Möglichkeit, Muster für Such- und Übereinstimmungsvorgänge zu definieren.  Beyond Compare ermöglicht Ihnen die Verwendung von regulären Ausdrücken beim Suchen durch Text sowie bei der Spezifizierung von Regeln zur Textklassifizierung.  Bei der Unterstützung hinsichtlich regulärer Ausdrücke durch Beyond Compare handelt es sich um eine Syntaxuntermenge der Perl-Kompatiblen Regulären Ausdrücke (PCRE = Perl Compatible Regular Expressions).</p>
+<p class="p_Normal">Reguläre Ausdrücke können ein komplexes Themengebiet sein, und es gibt über sie einige hervorragende Werke.  Eines dieser Werke ist ein Buch mit dem Titel <span style="font-style: italic;">Mastering Regular Expressions</span>.  Ein weiteres ausgezeichnetes Werk ist <span style="font-style: italic;">A Tao of Regular Expressions</span> von Steve Mansour, welches hier zu finden ist:</p>
+<p class="p_Normal"> &nbsp; &nbsp;  <a href="http://www.scootersoftware.com/RegEx.html" class="weblink">www.scootersoftware.com/RegEx.html</a></p>
+<p class="p_Normal">Ein regulärer Ausdruck wird aus zwei Arten von Zeichen zusammengestellt:  normale Zeichen und Metazeichen.  Bei einer Übereinstimmungsprüfung übernehmen die Metazeichen ganz bestimmte Aufgaben zur Steuerung, und zwar wie die Übereinstimmung gemacht wird, und als Jokerzeichen (Wildcards).  Normale Zeichen stehen immer für sich selbst.  Um Übereinstimmung mit Metazeichen herzustellen, müssen diese durch <span style="font-style: italic;">Escape</span>-Sequenzen dargestellt werden, indem ein umgekehrter Schrägstrich (Backslash) &quot;\&quot; vorangestellt wird.  Es gibt mehrere Arten von Metazeichen, die im Folgenden erklärt sind.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Metazeichen - Escape-Sequenzen</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Escape-Sequenz</p>
+</td>
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Bedeutung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\xnn</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Zeichen mit dem hexadezimalen Code nn</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\x{nnnn}</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Zeichen mit dem hexadezimalen Code nnnn</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\x{F000}</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Zeichen mit einem Null-Wert</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\t</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Tab (0x09)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\f</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Formfeed (0x0C) (Zeilenvorschub)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\a</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Bell (0x07) (Akust. Signal)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\e</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Escape (0x1B)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle"><span class="f_Subtitle">Metazeichen - Vordefinierte Klassen</span></p>
+<p class="p_Normal">Vordefinierte Zeichenklassen stimmen mit einer bestimmten Untermenge von Zeichen überein.  Die folgenden Klassen stehen Ihnen bereits zur Verfügung.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Klasse</p>
+</td>
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Bedeutung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">.</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">jedes beliebige Zeichen</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\w</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">jedes alphanumerische Zeichen oder _</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\W</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">jedes nicht-alphanumerische Zeichen</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\d</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">beliebiges numerisches Zeichen (0-9)</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\D</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">jedes nicht-numerische Zeichen</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">\s</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">jedes Whitespace (=Leerzeichen) (Leerschritt, Tab)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Sie können auch Ihre eigenen Zeichenklassen konstruieren, indem Sie eine Gruppe von Zeichen mit eckigen Klammern &quot;[]&quot; umgeben.  Die vordefinierten Klassen (außer &quot;.&quot;) können innerhalb der Klammern verwendet werden.  Wenn ein Minuszeichen &quot;-&quot; zwischen zwei Zeichen steht, repräsentiert dies einen Wertebereich.  Auf diese Weise steht [a-z] für alle kleingeschriebenen Buchstaben von a bis z, und [a-zA-Z] für alle sowohl groß- als auch kleingeschriebenen Buchstaben von a bis z.  Um das &quot;-&quot; als Teil der Klasse einzubeziehen, platzieren Sie es am Anfang oder Ende der Zeichenfolge.</p>
+<p class="p_Normal">Wenn das erste Zeichen innerhalb der eckigen Klammern ein Zirkumflex &quot;^&quot; ist, dann repräsentiert die Klasse alles außer den angegebenen Zeichen.  [^a-z] stimmt mit jedem Zeichen überein, welches kein kleingeschriebener Buchstabe ist.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Metazeichen - Alternativen</span></p>
+<p class="p_Normal">Das Platzieren von &quot;|&quot; zwischen zwei Gruppen von Objekten repräsentiert Alternativen.  a|b stimmt sowohl mit a als auch mit b überein.  ab|cd stimmt mit &quot;ab&quot; oder &quot;cd&quot; überein, jedoch nicht mit &quot;ac&quot;.  &quot;|&quot; gruppiert Zeichen beginnend vom Trennzeichen (&quot;(&quot;, &quot;[&quot;, oder Anfang des Musters) bis zu sich selbst, und dann bis zum Ende des Musters.  Alternativen können mit runden Klammern &quot;()&quot; umgeben werden, um zu verdeutlichen, was zusammengehört, wie z.B. in a(bc|de)f.  Alternativen werden von links nach rechts abgearbeitet.  So dass bey|beyond schon bei bey übereinstimmt; sogar wenn die Zeichenfolge &quot;beyond&quot; lautet.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Metazeichen - Position</span></p>
+<p class="p_Normal">Die folgenden Metazeichen steuern, wo die Übereinstimmung auf einer Zeile stattfinden kann.  Beachten Sie: \A und \Z geben den Anfang bzw. das Ende eines Textes an.  Da Beyond Compare jedoch auf Basis einer zeilenweisen Suche arbeitet, haben sie denselben Effekt wie ^ und $.</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Metazeichen</p>
+</td>
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Bedeutung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">^</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Übereinstimmung nur am Zeilenanfang</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">$</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Übereinstimmung nur am Zeilenende</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle"><span class="f_Subtitle">Metazeichen - Iteratoren</span></p>
+<p class="p_Normal">Alles in einem regulären Ausdruck darf von einem Iterator-Metazeichen gefolgt werden, welches sich wiederum auf das Zeichen vor ihm bezieht.  Es gibt zwei Arten von Iteratoren: greedy (gierig) und non-greedy (genügsam).  Greedy (Gierige) Iteratoren ergeben so viel wie möglich Übereinstimmungen, während non-greedy (genügsame) Iteratoren so wenig wie möglich Übereinstimmungen ergeben.</p>
+<p class="p_Normal">Greedy (Gierig):</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Metazeichen</p>
+</td>
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Bedeutung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">*</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">null oder mehr des voranstehenden Zeichens (äquivalent zu {0,})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">+</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">eines oder mehr des voranstehenden Zeichens (äquivalent zu {1,})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">?</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">null- oder einmaliges Auftreten (äquivalent zu {0,1})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">{n}</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">exakt n-maliges Auftreten (äquivalent zu {n,n})</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">{n,}</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">n-maliges oder mehrfaches Auftreten</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">{n,m}</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">mindestens n-maliges, jedoch nicht mehr als m-maliges Auftreten</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Non-greedy (Genügsam):</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Metazeichen</p>
+</td>
+<td style="vertical-align:top; background-color:#dadada; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">Bedeutung</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">*?</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">null- oder mehrmaliges Auftreten</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">+?</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">ein- oder mehrmaliges Auftreten</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">??</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">null- oder einmaliges Auftreten</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">{n}?</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">exakt n-maliges Auftreten</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">{n,}?</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">mindestens n-maliges Auftreten</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">{n,m}?</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">mindestens n-maliges, jedoch nicht mehr als m-maliges Auftreten</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Subtitle"><span class="f_Subtitle">Metazeichen - Unterausdrücke</span></p>
+<p class="p_Normal">Auch runde Klammern &quot;()&quot; können zur Gruppierung von Zeichen für Iteratoren und Rückreferenzen (siehe unten) verwendet werden.  (bey){4,5} stimmt mit 4 und 5 Vorkommen von &quot;bey&quot; überein.  (abc|[0-9])* stimmt mit jeder Kombination von &quot;abc&quot; und den Ziffern 0 bis 9 überein (z.B. &quot;abc5&quot;, &quot;679abc&quot; und &quot;abc77abc&quot;).</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Metazeichen - Rückreferenzen</span></p>
+<p class="p_Normal">Jede Zeichenfolge, die innerhalb von runden Klammern &quot;()&quot; übereinstimmt, wird als Unterausdruck gespeichert, auf den später mit \1 bis \9 (entsprechend der Reihenfolge von links nach rechts) zugegriffen werden kann.  b(.)\1n stimmt mit &quot;been&quot; und &quot;boon&quot; überein, jedoch nicht mit &quot;bean&quot;, &quot;ben&quot; oder &quot;beeen&quot;.</p>
+<p class="p_Subtitle"><span class="f_Subtitle">Modifikatoren</span></p>
+<p class="p_Normal">Modifikatoren (oder Modifier) ändern das Übereinstimmungsverhalten von ihrer Platzierung aus.  Ist der Modifier in einem Unterausdruck enthalten, wirkt er sich nur auf diesen Unterausdruck aus.  Verwenden Sie (?i) und (?-i) um die Beachtung von Groß-Kleinschreibung bei der Übereinstimmung zu steuern.</p>
+<p class="p_Normal">Beispiele:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 14px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced"> &nbsp;(?i)Beyond Compare</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">stimmt mit &quot;Beyond Compare&quot; und &quot;beyond compare&quot; überein</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced"> &nbsp;(?i)Beyond (?-i)Compare</p>
+</td>
+<td style="vertical-align:top; background-color:#eeeeee; padding:2px; border:solid 2px #ffffff;"><p class="p_SingleSpaced">stimmt mit &quot;Beyond Compare&quot; und &quot;bEyOnD Compare&quot; überein, jedoch nicht mit &quot;beyond compare&quot;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_SingleSpaced"><span class="f_SingleSpaced">&nbsp;</span></p>
+<p class="p_SingleSpaced"><span class="f_SeeAlso">Siehe auch</span></p>
+<p class="p_SingleSpaced"><a href="sample_regular_expressions.html" class="topiclink">Beispiele für reguläre Ausdrücke</a></p>
+
+</td></tr></table>
+
+</body>
+</html>

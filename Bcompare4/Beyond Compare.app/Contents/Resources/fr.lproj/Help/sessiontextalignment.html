@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Paramètres d'alignement de Comparaison de Textes</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="contrôle d'alignement (dans la Comparaison de Textes)" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "sessiontextalignment.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" 
+       style="margin: 0px; background: #9D0909 url(red-bg.jpg) 0px 0px repeat-x;">
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#B01213"> -->
+  <tr valign="middle">
+<!--    <td style="width: 10px">&nbsp;</td> -->
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Paramètres d'alignement de Comparaison de Textes</span></h1>
+<p class="p_Command2"><span class="f_Command2">Session </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Paramètres de session </span><span class="f_Command2">&gt;</span><span class="f_Command2"> Alignement</span></p>
+
+    </td>
+    <td align="right">
+     <span style="font-size: 9pt">
+     <a href="sessiontextimportance.html"
+        onmouseover="document.images.prev.src='prev-hot.png'" 
+        onmouseout="document.images.prev.src='prev.png'"
+        ><img name=prev src="prev.png" border=0 alt="Previous"
+        ></a><a href="sessiontext.html"
+        onmouseover="document.images.top.src='top-hot.png'" 
+        onmouseout="document.images.top.src='top.png'"><img name=top src="top.png" border=0 alt="Up"
+        ></a><a href="sessiontextreplacements.html"
+        onmouseover="document.images.next.src='next-hot.png'" 
+        onmouseout="document.images.next.src='next.png'"><img name=next src="next.png" border=0 alt="Next"
+        ></a>
+     </span>
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<p class="p_Normal">Les paramètres de l'onglet Alignement contrôle l'algorithme pour aligner les lignes dans la comparaison.</p>
+<p class="p_Normal">Cochez <span class="f_Command">Ne jamais aligner les différences</span> pour afficher les lignes avec des différences importantes comme des blocs de texte ajoutés ou supprimés plutôt que du texte modifié.</p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Non aligné</span> pour comparer des fichiers sans aligner les lignes en se basant sur leur contenu.</p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Alignement standard</span> pour alignes les fichiers en comparant des sections successivement de plus en plus petites de chaque fichier.  Des parties de l'alignement peut être montrées avant que la comparaison complète soit finie.</p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Alignement Myers O(ND)</span> pour aligner les fichiers en utilisant un algorithme standard LCS (Longest Common Subsequence / Sous-séquence Commune la plus Longue).  Cela peut donner de meilleures correspondances dans certains cas tels que de grandes insertions ou lorsque les fichiers contiennent beaucoup de textes répétitifs.  Comme les fichiers sont comparés comme un tout, de grands fichiers prennent beaucoup plus de temps que la méthode standard, et les fichiers ne sont pas affichés tant que la comparaison n'est pas terminée.  Cela ne supporte pas des comparaisons de similarité, c'est pourquoi les non-correspondances seront groupées en blocs.</p>
+<p class="p_Normal">Sélectionnez <span class="f_Command">Alignement Patience Diff</span> pour aligner les fichiers en utilisant l'algorithme de Bram Cohen.</p>
+<p class="p_Normal">La <span class="f_Command">Tolérance de synchronisation</span> spécifie le nombre maximum de lignes que l'algorithme testera lors d'une recherche de correspondance avec une ligne particulière.  L'augmenter peut améliorer l'alignement, spécialement s'il y a de grands trous.  Bien sûr, la comparaison peut également demander plus de temps.</p>
+<p class="p_Normal">Cochez la case <span class="f_Command">Utiliser la correspondance de proximité</span> pour essayer d'aligner le reste des lignes qui ne correspondent pas en se basant sur leur similarité.</p>
+<p class="p_Normal"><img width="12" height="12" style="margin:0;width:12px;height:12px;border:none" src="note.png"/><span class="f_Subtitle">Note</span>  Indépendamment de ces paramètres, l'algorithme d'alignement produira parfois des résultats indésirables.  Pour aligner manuellement deux lignes, faites un clic-droit sur une ligne et choisissez <span class="f_Command">Aligner avec</span>, puis cliquez sur la seconde ligne.</p>
+
+</td></tr></table>
+
+</body>
+</html>
