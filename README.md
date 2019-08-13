@@ -62,3 +62,15 @@ sudo apt-get install krusader
 ##### 如何安装samba
 1.
 https://www.linuxidc.com/Linux/2018-11/155466.htm
+
+
+##### 如何安装gedit插件
+1.
+`
+$sudo apt-get install gedit-plugins
+`
+2.
+
+##### 
+
+
