@@ -93,5 +93,7 @@ $sudo apt-get install gedit-plugins
 
 7.python
 
-8.
+8.hihglight-word
+
+9.
 
