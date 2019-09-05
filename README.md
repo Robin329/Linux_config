@@ -95,5 +95,6 @@ $sudo apt-get install gedit-plugins
 
 8.hihglight-word
 
-9.
+9.close red line
+搜索栏输入 squiggle， 将出现的 Error Squiggles 选项改为 Disabled
 
