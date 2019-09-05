@@ -72,6 +72,19 @@ $sudo apt-get install gedit-plugins
 `
 2.
 
-##### 
+##### VScode插件
+插件地址：https://marketplace.visualstudio.com/VSCode
+ Linux ~/.vscode/extensions
+ macOs ~/.vscode/extensions
+ Windows %USERPROFILE%\.vscode\extensions
 
+1.Auto import
+
+2.ctags
+
+3.cscope
+
+4.vscode-icons
+
+5.
 
