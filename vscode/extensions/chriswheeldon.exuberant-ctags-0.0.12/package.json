@@ -1,0 +1,83 @@
+{
+	"name": "exuberant-ctags",
+	"displayName": "Exuberant CTags",
+	"description": "Exuberant CTags support for VS Code",
+	"version": "0.0.12",
+	"publisher": "chriswheeldon",
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chriswheeldon/vscode-ctags"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onLanguage:c",
+		"onLanguage:cpp",
+		"onCommand:extension.reloadCTags",
+		"onCommand:extension.regenerateCTags"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.regenerateCTags",
+				"title": "Ctags Support: regenerate tags file"
+			}
+		],
+		"configuration": {
+			"title": "Exuberant CTags",
+			"properties": {
+				"ctags.excludePatterns": {
+					"type": "array",
+					"items": "string",
+					"markdownDescription": "An array of file and directory exclude patterns to be considered when (re)generating tags. Each pattern is passed to ctags as --exclude=_pattern_."
+				},
+				"ctags.languages": {
+					"type": "array",
+					"items": "string",
+					"markdownDescription": "An array of languages to be considered when (re)generating tags. The languages are passed to ctags as --languages=_lang1_,_lang2_. See ctags --list-languages for valid values.",
+					"default": [
+						"all"
+					]
+				},
+				"ctags.regenerateOnSave": {
+					"type": "boolean",
+					"markdownDescription": "If true, then ctags will be regenerated and reindexed on save.",
+					"default": false
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.10.7",
+		"tslint": "^5.18.0",
+		"tslint-config-prettier": "^1.18.0",
+		"typescript": "^2.9.2",
+		"vscode": "^1.1.36"
+	},
+	"prettier": {
+		"singleQuote": true
+	},
+	"icon": "images/icon.png",
+	"dependencies": {
+		"textindexer": "0.0.7"
+	},
+	"license": "MIT",
+	"__metadata": {
+		"id": "b0622c18-6881-499e-8c5e-e3d5aaeacceb",
+		"publisherId": "2617d77d-9cf0-4f17-be87-be87d555f346",
+		"publisherDisplayName": "Chris Wheeldon"
+	}
+}

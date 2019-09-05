@@ -1,0 +1,73 @@
+{
+	"name": "globalsymbolscope",
+	"displayName": "GlobalSymbolScope",
+	"publisher": "ianhsu",
+	"description": "Gtags-cscope",
+	"version": "0.0.2",
+	"icon": "images/gs.png",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:editor.LookupSymbol",
+		"onCommand:editor.LookupGlobalDef",
+		"onCommand:editor.FindText"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "editor.LookupSymbol",
+				"title": "Look up Symbol"
+			},
+			{
+				"command": "editor.LookupGlobalDef",
+				"title": "Look up Global Definition"
+			},
+			{
+				"command": "editor.FindText",
+				"title": "Find Text String"
+			}
+		],
+		"languages": [
+			{
+				"id": "symbolscope",
+				"aliases": [
+					"symbolscope"
+				],
+				"extensions": [
+					".symbolscope"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "symbolscope",
+				"path": "./locations-syntax.json",
+				"scopeName": "source.symbolscope"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "c5127111-acfb-4c62-9bf4-25bb4183bf74",
+		"publisherId": "5fcaa041-9b6b-44d3-9eb5-c500e04c1a99",
+		"publisherDisplayName": "ian.hsu"
+	}
+}

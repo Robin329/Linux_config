@@ -1,0 +1,185 @@
+{
+	"name": "highlight-words",
+	"displayName": "highlight-words",
+	"description": "Highlight all occurrences of words or expressions",
+	"version": "0.1.4",
+	"icon": "images/highlight.png",
+	"publisher": "rsbondi",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rsbondi/highlight-words"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:highlightwords.addHighlight",
+		"onCommand:highlightwords.removeHighlight",
+		"onCommand:highlightwords.addRegExpHighlight",
+		"onCommand:highlightwords.addHighlightWithOptions",
+		"onCommand:highlightwords.removeAllHighlights",
+		"onCommand:highlightwords.setHighlightMode"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"mocha": "^5.2.0",
+		"typescript": "^2.1.4",
+		"vscode": "^1.1.33"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "highlightwords.addHighlight",
+				"title": "Highlight Toggle Current"
+			},
+			{
+				"command": "highlightwords.removeHighlight",
+				"title": "Highlight Remove"
+			},
+			{
+				"command": "highlightwords.removeAllHighlights",
+				"title": "Highlight Remove All"
+			},
+			{
+				"command": "highlightwords.addRegExpHighlight",
+				"title": "Highlight Expression"
+			},
+			{
+				"command": "highlightwords.addHighlightWithOptions",
+				"title": "Highlight Selection with Options"
+			},
+			{
+				"command": "highlightwords.setHighlightMode",
+				"title": "Set Highlight Mode"
+			},
+			{
+				"command": "highlightwords.treeRemoveHighlight",
+				"title": "Remove"
+			},
+			{
+				"command": "highlightwords.treeHighlightOptions",
+				"title": "Change Options"
+			},
+			{
+				"command": "highlightwords.toggleSidebar",
+				"title": "Highlight Toggle Sidebar"
+			},
+			{
+				"command": "highlightwords.findPrevious",
+				"title": "Back",
+				"icon": {
+					"light": "resources/icons/arrow-left.svg",
+					"dark": "resources/icons/arrow-left-white.svg"
+				}
+			},
+			{
+				"command": "highlightwords.findNext",
+				"title": "Next",
+				"icon": {
+					"light": "resources/icons/arrow-right.svg",
+					"dark": "resources/icons/arrow-right-white.svg"
+				}
+			}
+		],
+		"configuration": {
+			"properties": {
+				"highlightwords.colors": {
+					"default": [
+						{
+							"light": "#b3d9ff",
+							"dark": "cyan"
+						},
+						{
+							"light": "#e6ffb3",
+							"dark": "pink"
+						},
+						{
+							"light": "#b3b3ff",
+							"dark": "lightgreen"
+						},
+						{
+							"light": "#ffd9b3",
+							"dark": "magenta"
+						},
+						{
+							"light": "#ffb3ff",
+							"dark": "cornflowerblue"
+						},
+						{
+							"light": "#b3ffb3",
+							"dark": "orange"
+						},
+						{
+							"light": "#ffff80",
+							"dark": "green"
+						},
+						{
+							"light": "#d1e0e0",
+							"dark": "red"
+						}
+					]
+				},
+				"highlightwords.box": {
+					"default": {
+						"light": false,
+						"dark": true
+					}
+				},
+				"highlightwords.defaultMode": {
+					"default": 0
+				},
+				"highlightwords.showSidebar": {
+					"default": true
+				}
+			}
+		},
+		"views": {
+			"explorer": [
+				{
+					"id": "hilightWordsExplore",
+					"name": "Highlights",
+					"when": "showSidebar"
+				}
+			]
+		},
+		"menus": {
+			"view/item/context": [
+				{
+					"command": "highlightwords.treeRemoveHighlight",
+					"when": "view == hilightWordsExplore"
+				},
+				{
+					"command": "highlightwords.treeHighlightOptions",
+					"when": "view == hilightWordsExplore"
+				},
+				{
+					"command": "highlightwords.findPrevious",
+					"when": "view == hilightWordsExplore",
+					"group": "inline"
+				},
+				{
+					"command": "highlightwords.findNext",
+					"when": "view == hilightWordsExplore",
+					"group": "inline"
+				}
+			]
+		}
+	},
+	"__metadata": {
+		"id": "0774aeb9-5809-4b36-9289-f852f253d6f9",
+		"publisherId": "3491ab5f-79a8-47a8-a7fa-3916cef87308",
+		"publisherDisplayName": "Richard Bondi"
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"name": "vscode-highlight",
+	"displayName": "Highlight",
+	"description": "Advanced text highlighter based on regexes. Useful for todos, annotations etc.",
+	"icon": "resources/logo-128x128.png",
+	"version": "1.3.4",
+	"license": "MIT",
+	"main": "out/extension.js",
+	"publisher": "fabiospampinato",
+	"activationEvents": [
+		"*"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Highlight - Configuration",
+			"properties": {
+				"highlight.decorations": {
+					"type": "object",
+					"description": "Default decorations from which all others inherit from",
+					"default": {
+						"rangeBehavior": 3
+					}
+				},
+				"highlight.regexes": {
+					"type": "object",
+					"description": "Object mapping regexes to an array of decorations to apply to the capturing groups",
+					"default": {}
+				},
+				"highlight.regexFlags": {
+					"type": "string",
+					"description": "Flags used when building the regexes",
+					"default": "gi"
+				},
+				"highlight.maxMatches": {
+					"type": "number",
+					"description": "Maximum number of matches per regex to decorate",
+					"default": 250
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "rm -rf out && webpack --mode production",
+		"publish": "vsce publish && npm publish",
+		"compile": "webpack --mode development",
+		"compile:watch": "webpack --mode development --watch",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"bugs": {
+		"url": "https://github.com/fabiospampinato/vscode-highlight/issues"
+	},
+	"author": {
+		"name": "Fabio Spampinato",
+		"email": "spampinabio@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fabiospampinato/vscode-highlight.git"
+	},
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"keywords": [
+		"vscode",
+		"highlight",
+		"text",
+		"todo",
+		"annotation",
+		"vsc",
+		"extension"
+	],
+	"categories": [
+		"Other"
+	],
+	"dependencies": {
+		"@types/node": "^10.12.8",
+		"lodash": "^4.17.4",
+		"pify": "^3.0.0",
+		"string-matches": "^1.1.0"
+	},
+	"devDependencies": {
+		"ts-loader": "^5.2.1",
+		"typescript": "~2.4.1",
+		"vscode": "^1.1.4",
+		"webpack": "^4.20.2",
+		"webpack-cli": "^3.1.2"
+	},
+	"__metadata": {
+		"id": "5471fe3e-315b-4c05-b41e-8bb493227c2e",
+		"publisherId": "4288bdb9-145e-438b-ab6b-4a6839ee9c6f",
+		"publisherDisplayName": "Fabio Spampinato"
+	}
+}
