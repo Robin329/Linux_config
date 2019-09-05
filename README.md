@@ -86,5 +86,12 @@ $sudo apt-get install gedit-plugins
 
 4.vscode-icons
 
-5.
+5.自动换行：
+"editor.wordWrap": "off",
+
+6.c/c++
+
+7.python
+
+8.
 
