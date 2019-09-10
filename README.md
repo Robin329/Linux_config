@@ -98,3 +98,7 @@ $sudo apt-get install gedit-plugins
 9.close red line
 搜索栏输入 squiggle， 将出现的 Error Squiggles 选项改为 Disabled
 
+10.vscode #ifdef 区域变暗
+在vscode的C/C++插件设置中 将C_Cpp: Dim Inactive Regions 勾选
+
+或者在 setting中添加 "C_Cpp.dimInactiveRegions": true
