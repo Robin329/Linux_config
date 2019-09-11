@@ -102,3 +102,11 @@ $sudo apt-get install gedit-plugins
 在vscode的C/C++插件设置中 将C_Cpp: Dim Inactive Regions 勾选
 
 或者在 setting中添加 "C_Cpp.dimInactiveRegions": true
+
+11.platform IDE
+
+12.llvm
+
+13.ARM
+
+14.
