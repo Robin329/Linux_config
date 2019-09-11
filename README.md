@@ -103,7 +103,8 @@ $sudo apt-get install gedit-plugins
 
 或者在 setting中添加 "C_Cpp.dimInactiveRegions": true
 
-11.platform IDE
+11.关闭鼠标悬停提示：
+hover
 
 12.llvm
 
