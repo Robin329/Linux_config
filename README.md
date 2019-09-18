@@ -60,6 +60,14 @@ sudo apt-get install krusader
 
 2.
 
+
+##### 好用的Linux工具
+
+1.npm install -g tldr
+
+2.
+
+
 ##### 如何安装samba
 1.
 https://www.linuxidc.com/Linux/2018-11/155466.htm
