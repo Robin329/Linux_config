@@ -106,8 +106,8 @@ $sudo apt-get install gedit-plugins
 11.关闭鼠标悬停提示：
 hover
 
-12.llvm
+12.Bookmarks
 
-13.ARM
+13.
 
 14.
