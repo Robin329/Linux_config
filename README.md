@@ -65,7 +65,9 @@ sudo apt-get install krusader
 
 1.npm install -g tldr
 
-2.
+2.pip install cheat
+
+3.
 
 
 ##### 如何安装samba
