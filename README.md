@@ -64,11 +64,13 @@ sudo apt-get install krusader
 ##### 好用的Linux工具
 
 简单地命令行说明工具：
+
 1.npm install -g tldr
 
 
 更强悍的命令行说明工具：
-2.pip install cheat
+
+2.pip3 install cheat
 
 3.
 
