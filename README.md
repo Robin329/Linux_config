@@ -54,6 +54,21 @@ https://blog.csdn.net/zhanghm1995/article/details/89419109
 `up [num]`	表示返回上num层目录	
 
 
+3.不更新
+解决方法，先给gitlab写保护，让apt-get upgrade不更新它。
+
+我们先要知道gitlab软件包的名称，通过查看当前的系统中所有软件包状态可以知道
+
+-- 查看当前的系统中所有软件包状态
+sudo dpkg --get-selections | more
+可以找到terminator软件包名为"treminator"
+-- 给gitlab-ce锁定当前版本不更新
+sudo echo "terminator hold" | sudo dpkg --set-selections
+-- 查看当前己锁定的软件包：
+sudo dpkg --get-selections | grep hold
+可以看到gitlab-ce 己经hold了！
+现在可以再执行apt-get upgrade了，gitlab不会被升级。
+
 ##### 好用的双面板文件管理器
 1.安装
 sudo apt-get install krusader
@@ -62,67 +77,3 @@ sudo apt-get install krusader
 
 
 ##### 好用的Linux工具
-
-简单地命令行说明工具：
-
-1.npm install -g tldr
-
-
-更强悍的命令行说明工具：
-
-2.pip3 install cheat
-
-3.
-
-
-##### 如何安装samba
-1.
-https://www.linuxidc.com/Linux/2018-11/155466.htm
-
-
-##### 如何安装gedit插件
-1.
-`
-$sudo apt-get install gedit-plugins
-`
-2.
-
-##### VScode插件
-插件地址：https://marketplace.visualstudio.com/VSCode
- Linux ~/.vscode/extensions
- macOs ~/.vscode/extensions
- Windows %USERPROFILE%\.vscode\extensions
-
-1.Auto import
-
-2.ctags
-
-3.cscope
-
-4.vscode-icons
-
-5.自动换行：
-"editor.wordWrap": "off",
-
-6.c/c++
-
-7.python
-
-8.hihglight-word
-
-9.close red line
-搜索栏输入 squiggle， 将出现的 Error Squiggles 选项改为 Disabled
-
-10.vscode #ifdef 区域变暗
-在vscode的C/C++插件设置中 将C_Cpp: Dim Inactive Regions 勾选
-
-或者在 setting中添加 "C_Cpp.dimInactiveRegions": true
-
-11.关闭鼠标悬停提示：
-hover
-
-12.Bookmarks
-
-13.Code Runner
-
-14.
