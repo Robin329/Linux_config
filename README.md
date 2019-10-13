@@ -59,13 +59,20 @@ https://blog.csdn.net/zhanghm1995/article/details/89419109
 
 我们先要知道gitlab软件包的名称，通过查看当前的系统中所有软件包状态可以知道
 
--- 查看当前的系统中所有软件包状态
+- 查看当前的系统中所有软件包状态
+
 sudo dpkg --get-selections | more
+
 可以找到terminator软件包名为"treminator"
--- 给gitlab-ce锁定当前版本不更新
+
+- 给gitlab-ce锁定当前版本不更新
+
 sudo echo "terminator hold" | sudo dpkg --set-selections
--- 查看当前己锁定的软件包：
+
+- 查看当前己锁定的软件包：
+
 sudo dpkg --get-selections | grep hold
+
 可以看到gitlab-ce 己经hold了！
 现在可以再执行apt-get upgrade了，gitlab不会被升级。
 
