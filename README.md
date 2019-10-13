@@ -137,3 +137,8 @@ Windows %USERPROFILE%.vscode\extensions
 12.Bookmarks
 
 13.Code Runner
+
+14.字体推荐：
+'Courier New',
+
+15.
