@@ -84,3 +84,56 @@ sudo apt-get install krusader
 
 
 ##### 好用的Linux工具
+简单地命令行说明工具：
+
+1.npm install -g tldr
+
+更强悍的命令行说明工具：
+
+2.pip3 install cheat
+
+如何安装samba
+
+https://www.linuxidc.com/Linux/2018-11/155466.htm
+如何安装gedit插件
+
+$sudo apt-get install gedit-plugins 
+
+2.
+##### VScode插件
+
+插件地址：https://marketplace.visualstudio.com/VSCode 
+
+Linux ~/.vscode/extensions 
+
+macOs ~/.vscode/extensions 
+
+Windows %USERPROFILE%.vscode\extensions
+
+1.Auto import
+
+2.ctags
+
+3.cscope
+
+4.vscode-icons
+
+5.自动换行： "editor.wordWrap": "off",
+
+6.c/c++
+
+7.python
+
+8.hihglight-word
+
+9.close red line 搜索栏输入 squiggle， 将出现的 Error Squiggles 选项改为 Disabled
+
+10.vscode #ifdef 区域变暗 在vscode的C/C++插件设置中 将C_Cpp: Dim Inactive Regions 勾选
+
+或者在 setting中添加 "C_Cpp.dimInactiveRegions": true
+
+11.关闭鼠标悬停提示： hover
+
+12.Bookmarks
+
+13.Code Runner
