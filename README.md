@@ -141,4 +141,18 @@ Windows %USERPROFILE%.vscode\extensions
 14.字体推荐：
 'Courier New',
 
-15.
+15.彩色括号
+Bracket Pair Colorizer
+
+16.头文件注释
+Document This
+
+17.路径提示
+Path Intellisense
+
+18.顶部注释
+vscode-fileheader
+
+19.
+
+
