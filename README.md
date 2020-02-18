@@ -156,3 +156,62 @@ vscode-fileheader
 19.
 
 
+
+=============vscode monokai配置==================
+ "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "entity.name.type",
+                "settings": {
+                    "foreground": "#FBDE4B",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "variable.other.global",
+                "settings": {
+                    "foreground": "#ee57c8",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "entity.name.label",
+                "settings": {
+                    "foreground": "#f1575c",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "variable.other.property",
+                "settings": {
+                    "foreground": "#f1575c",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "variable.other.enummember",
+                "settings": {
+                    "foreground": "#A6E22E",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "name": "Class/Constructor modifier",
+                "scope": [
+                    "storage.type"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#757373"
+    },
