@@ -108,7 +108,7 @@ Linux ~/.vscode/extensions
 
 macOs ~/.vscode/extensions 
 
-Windows %USERPROFILE%\.vscode\extensions
+Windows %USERPROFILE%/.vscode/extensions
 
 1.Auto import
 
