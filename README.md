@@ -158,6 +158,7 @@ vscode-fileheader
 
 
 =============vscode monokai配置==================
+```
  "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -215,3 +216,4 @@ vscode-fileheader
     "workbench.colorCustomizations": {
         "editor.selectionBackground": "#757373"
     },
+```
