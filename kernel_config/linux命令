@@ -1,0 +1,43 @@
+Title: 如何查看linux命令的源码
+Date: 2014-7-2 19:43
+Category:linux
+Tags: linux源码
+Slug:linux源码
+Author: Boqing Ann
+Summary:查看linux源码的方法
+
+以搜索ls命令源码为例，先搜索命令所在包，命令如下：
+
+```
+lpj@lpj-linux:~$ which ls
+/bin/ls
+```
+
+用命令搜索该软件所在包，代码如下：
+
+```
+lpj@lpj-linux:~$ dpkg -S /bin/ls
+coreutils: /bin/ls
+```
+
+从上一步中可以知道ls命令的实现在包coreutils中，用apt安装(说安装有些歧义，主要是区分apt-get -d)该包的源代码然后解压，代码如下：
+
+```
+sudo apt-get source coreutils
+cd /usr/src/coreutils-XXX #XXX表示版本号
+sudo tar zxvf coreutils-XXX.tar.gz
+```
+
+或者只下载源码，然后手动打补丁再解压，代码如下：
+
+```
+sudo apt-get -d source coreutils
+cd /usr/src
+tar zxvf coreutils-XXX.tar.gz
+gzip -d coreutils-XXX.diff.gz #这一步会生成coreutils-XXX.diff文件
+patch -p0 < coreutils-XXX.diff
+cd coreutils-XXX
+tar zxvf coreutils-XXX.tar.gz
+```
+
+OK，这几步执行完后，就可以进入```/usr/src/coreutils-XXX/coreutils-XXX/src``` 中查看各命令对应的源代码了
