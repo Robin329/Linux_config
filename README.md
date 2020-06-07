@@ -153,7 +153,9 @@ Path Intellisense
 18.顶部注释
 vscode-fileheader
 
-19.
+19.显示空格和tab
+renderWhitespace
+
 
 
 
