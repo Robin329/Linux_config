@@ -216,4 +216,6 @@ vscode-fileheader
     "workbench.colorCustomizations": {
         "editor.selectionBackground": "#757373"
     },
+    "C_Cpp.inactiveRegionForegroundColor": "#ffffff",
+    
 ```
