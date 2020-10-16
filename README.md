@@ -156,6 +156,11 @@ vscode-fileheader
 19.显示空格和tab
 renderWhitespace
 
+20.保存时自动格式化
+Format On Save
+
+Ctrl + K, Ctrl + F 也可以格式化指定部分
+21. 
 
 
 
