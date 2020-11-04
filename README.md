@@ -166,7 +166,10 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
 
 =============vscode monokai配置==================
 ```
- "editor.tokenColorCustomizations": {
+ {
+    "editor.suggestSelection": "first",
+    "editor.fontFamily": "Consolas, Source Code Pro, Monoca",
+    "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
                 "scope": "entity.name.type",
@@ -220,9 +223,73 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
             }
         ]
     },
-    "workbench.colorCustomizations": {
+    "highlightwords.colors": [
+        {"dark": "yellow" },
+        {"dark": "Cyan" },
+        {"dark": "Pink" },
+        {"dark": "LightGreen" },
+        {"dark": "LightSteelBlue" },
+        {"dark": "Plum" }
+        ],
+        "highlightwords.box": {
+            "light": true,
+            "dark": false
+        },
+"highlightwords.showSidebar": true,
+"highlightwords.defaultMode": 1,
+"workbench.colorCustomizations": {
         "editor.selectionBackground": "#757373"
     },
     "C_Cpp.inactiveRegionForegroundColor": "#ffffff",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "C_Cpp.dimInactiveRegions": false,
+    "editor.wordWrap": "on",
+    "C_Cpp.default.enableConfigurationSquiggles": false,
+    "editor.minimap.enabled": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "http.proxySupport": "off",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.history": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/*.a": true,
+        "**/*.apk": true,
+        "**/*.bin": true,
+        "**/*.o": true,
+        "**/*.o.*": true,
+        "**/*.so": true
+    },
+    "remote.SSH.remotePlatform": {
+        "172.21.16.247": "linux"
+    },
+    "git.ignoreLegacyWarning": true,
+    "remote.SSH.showLoginTerminal": true,
+    "java.home": "/studio/robin.jiang/Doc/java/jdk/jdk-11.0.1",
+    
+    "files.associations": {
+        "*.java": "java"
+    },
+    "java.requirements.JDK11Warning": false,
+    "java.semanticHighlighting.enabled": true,
+    "C_Cpp.workspaceParsingPriority": "low",
+    "timeline.excludeSources": [],
+    "terminal.integrated.fontFamily": "monospace",
+    "numberedBookmarks.navigateThroughAllFiles": "replace",
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
+    "files.autoGuessEncoding": true,
+    "workbench.iconTheme": "Monokai Classic Icons",
+    "C_Cpp.debugger.useBacktickCommandSubstitution": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.cursorStyle": "line-thin",
+    "editor.fontSize": 13,
+    "editor.formatOnSave": true
+    
+}
+
     
 ```
