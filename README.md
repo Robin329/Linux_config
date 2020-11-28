@@ -287,7 +287,43 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
     "editor.formatOnSaveMode": "modifications",
     "editor.cursorStyle": "line-thin",
     "editor.fontSize": 13,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "[cpp]": {
+            "editor.defaultFormatter": "chiehyu.vscode-astyle"
+        },
+        "astyle.cmd_options": [
+        "--style=otbs",
+        "--indent=spaces=4",
+        "--attach-namespaces",
+        "--attach-classes",
+        "--attach-inlines",
+        "--attach-extern-c",
+        "--attach-closing-while",
+        "--indent-switches",
+        "--indent-after-parens",
+        "--indent-continuation=2",
+        "--indent-preproc-block",
+        "--indent-preproc-define",
+        "--indent-col1-comments",
+        "--min-conditional-indent=2",
+        "--max-continuation-indent=40",
+        "--pad-oper",
+        "--pad-comma",
+        "--pad-header",
+        "--unpad-paren",
+        "--align-pointer=name",
+        "--align-reference=name",
+        "--break-one-line-headers",
+        "--add-braces",
+        "--convert-tabs",
+        "--close-templates",
+        "--max-code-length=80",
+        "--break-after-logical",
+        "--mode=c",
+        "--lineend=linux"
+    ],
+    "astyle.java.enable": true,
+    "astyle.executable": "/home/robin/bin/astyle_linux"
     
 }
 
