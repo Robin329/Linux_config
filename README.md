@@ -323,7 +323,15 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
         "--lineend=linux"
     ],
     "astyle.java.enable": true,
-    "astyle.executable": "/home/robin/bin/astyle_linux"
+    "astyle.executable": "/home/robin/bin/astyle_linux",
+        "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "gitlens.hovers.enabled": false,
+    "gitlens.hovers.pullRequests.enabled": false,
+    "gitlens.views.lineHistory.avatars": false,
+    "gitlens.mode.statusBar.enabled": false,
+    "gitlens.statusBar.enabled": false
     
 }
 
