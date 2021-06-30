@@ -1,16 +1,9 @@
 BasedOnStyle: Google
 
-AccessModifierOffset: -4
-AlignOperands: false
-AllowShortFunctionsOnASingleLine: Inline
 AlwaysBreakBeforeMultilineStrings: false
-ColumnLimit: 100
 CommentPragmas: NOLINT:.*
 ConstructorInitializerIndentWidth: 6
-ContinuationIndentWidth: 8
-IndentWidth: 4
 PenaltyBreakBeforeFirstCallParameter: 100000
-SpacesBeforeTrailingComments: 1
 
 #基础样式
 BasedOnStyle: Google
@@ -25,7 +18,7 @@ MaxEmptyLinesToKeep: 1
 # 圆括号的换行方式
 BreakBeforeBraces: Attach
 # 是否允许短方法单行
-AllowShortFunctionsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
 # 支持一行的if
 AllowShortIfStatementsOnASingleLine: true
 # 在未封闭(括号的开始和结束不在同一行)的括号中的代码是否对齐
@@ -55,7 +48,7 @@ BreakConstructorInitializersBeforeComma: true
 # 函数参数换行
 AllowAllParametersOfDeclarationOnNextLine: true
 #在续行(#     下一行)时的缩进长度
-ContinuationIndentWidth: 4
+ContinuationIndentWidth: 8
 # tab键盘的宽度
 TabWidth: 4
 # 赋值运算符前加空格
