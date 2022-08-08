@@ -55,3 +55,5 @@ TabWidth: 4
 SpaceBeforeAssignmentOperators: true
 # 行尾的注释前加1个空格
 SpacesBeforeTrailingComments: 1
+# 多行宏定义对齐
+AlignConsecutiveMacros: true
