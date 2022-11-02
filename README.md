@@ -380,13 +380,12 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
 
 ### clangd关闭波浪线警告
 在项目文件夹中添加.clangd文件：
-```
+
+```bash
 Diagnostics:
   Suppress: [*]
 ---
 If:
   PathMatch: .*\.hpp
-
- ```
     
 ```
