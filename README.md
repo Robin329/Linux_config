@@ -353,6 +353,28 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
     "clang-format.language.c.enable": true,
     "clang-format.language.cpp.enable": true,
     "clang-format.assumeFilename": "/studio/robin.jiang/Doc/vscode/.clang-format",
+    "clangd.onConfigChanged": "restart",
+"clangd.arguments": [
+    "--completion-style=detailed",
+        "--compile-commands-dir=${workspaceFolder}",
+        "--print-options",
+        "--background-index",
+        "--clang-tidy",
+        // "--enable-config",
+        "--pch-storage=memory",
+        "--header-insertion=never",
+        "--header-insertion-decorators",
+        "--all-scopes-completion",
+        "--completion-style=detailed",
+        "-j=4",
+        "--log=verbose"
+],
+"clangd.fallbackFlags": [
+    "-I${workspaceFolder}/include",
+    "-I${workspaceFolder}/out/include",
+    "-I${workspaceFolder}/out/include/generated/autoconf.h",
+]
+    
 }
 
 
@@ -360,8 +382,11 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
 在项目文件夹中添加.clangd文件：
 ```
 Diagnostics:
-  Suppress: ['*']
-  
+  Suppress: [*]
+---
+If:
+  PathMatch: .*\.hpp
+
  ```
     
 ```
