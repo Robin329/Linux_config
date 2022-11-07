@@ -355,7 +355,7 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
     "clang-format.assumeFilename": "/studio/robin.jiang/Doc/vscode/.clang-format",
     "clangd.onConfigChanged": "restart",
 "clangd.arguments": [
-    "--completion-style=detailed",
+   // "--completion-style=detailed",
         "--compile-commands-dir=${workspaceFolder}",
         "--print-options",
         "--background-index",
@@ -376,7 +376,7 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
 ]
     
 }
-
+```
 
 ### clangd关闭波浪线警告
 在项目文件夹中添加.clangd文件：
