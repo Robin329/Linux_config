@@ -275,7 +275,18 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
 
         // 类型参数
         "typeParameter": "#31A567"
-
+       "rules": {
+            "comment": {
+                // your preferred style here
+            },
+        },
+        "[Default Dark+]": {
+            "rules": {
+                "comment:cpp": {
+                    "foreground": "#569CD6"
+                }
+            }
+        }
         }
 
     },
