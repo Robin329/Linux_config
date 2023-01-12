@@ -366,25 +366,22 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
     "clang-format.assumeFilename": "/studio/robin.jiang/Doc/vscode/.clang-format",
     "clangd.onConfigChanged": "restart",
 "clangd.arguments": [
-   // "--completion-style=detailed",
-        "--compile-commands-dir=${workspaceFolder}",
-        "--print-options",
-        "--background-index",
-        "--clang-tidy",
-        // "--enable-config",
-        "--pch-storage=memory",
-        "--header-insertion=never",
-        "--header-insertion-decorators",
-        "--all-scopes-completion",
-        "--completion-style=detailed",
-        "-j=4",
-        "--log=verbose"
+    "--compile-commands-dir=${workspaceFolder}",
+    "--log=info",
+    "--enable-config",
+    "-j=12",
+    "--background-index",
+    "-header-insertion=iwyu",
+    "--completion-style=detailed"
 ],
 "clangd.fallbackFlags": [
     "-I${workspaceFolder}/include",
     "-I${workspaceFolder}/out/include",
-    "-I${workspaceFolder}/out/include/generated/autoconf.h",
-]
+    "-I${workspaceFolder}/out/include/generated",
+    "-I${workspaceFolder}/build/include",
+    "-I${workspaceFolder}/build/include/generated",
+    "-I${workspaceFolder}/build/.config"
+],
     
 }
 ```
