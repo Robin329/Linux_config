@@ -166,9 +166,7 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
 
 =============vscode monokai配置==================
 ```
- {
-    "editor.suggestSelection": "first",
-    "editor.fontFamily": "Consolas, Source Code Pro, Monoca",
+"editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -207,6 +205,13 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
                 }
             },
             {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#66d9ef",
+                    "fontStyle": ""
+                }
+            },
+            {
                 "name": "Class/Constructor modifier",
                 "scope": [
                     "storage.type"
@@ -220,76 +225,75 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
                 "settings": {
                     "fontStyle": ""
                 }
-            }
+            },
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
         ]
     },
-      // 语义高亮自定义
-
-        "editor.semanticTokenColorCustomizations": {
+    //     // 语义高亮自定义
+    "editor.semanticTokenColorCustomizations": {
         "enabled": true,
         "rules": {
-        // 抽象符号
-        "*.abstract": {
-        "fontStyle": "italic"
-        },
-
-        // 只读量等效为宏
-        "readonly": "#4FC1FF",
-        // 静态量（静态变量，静态函数）
-        "*.static": {
-        "fontStyle": "bold"
-        },
-
-        // 宏
-
-        "macro": {
-        // "foreground": "#8F5DAF"
-        // "foreground": "#4FC1FF"
-        },
-
-        // 成员函数
-
-        "method": {
-        "fontStyle": "underline"
-        },
-
-        // 命名空间
-        "namespace": {
-        "foreground": "#00D780"
-        },
-
-        // 函数参数
-        "parameter": {
-        "foreground": "#f1575c"
-        },
-        // 函数参数
-        "parameter.readonly": {
-        // "foreground": "#7BD1FF"
-        },
-
-        // 成员变量，似乎需要clangd12以上
-        "property": {
-        // "fontStyle": "underline",
-        // "foreground": "#C8ECFF"
-        },
-
-        // 类型参数
-        "typeParameter": "#31A567"
-       "rules": {
-            "comment": {
-                // your preferred style here
+            //     // 抽象符号
+            //     "*.abstract": {
+            //     "fontStyle": "italic"
+            //     },
+            //     // 只读量等效为宏
+            //     // "readonly": "#4FC1FF",
+            //     // 静态量（静态变量，静态函数）
+            //     "*.static": {
+            //     "fontStyle": "bold"
+            //     },
+            //     // 宏
+            //     "macro": {
+            //     // "foreground": "#8F5DAF"
+            //     // "foreground": "#4FC1FF"
+            //     },
+            // 成员函数
+            // "method": {
+            // "fontStyle": "underline"
+            // },
+            //     // 命名空间
+            //     "namespace": {
+            //     // "foreground": "#00D780"
+            //     },
+            //     // 函数参数
+            //     "parameter": {
+            //     // "foreground": "#f1575c"
+            //     },
+            // readonly parameter
+            "parameter.readonly": {
+                "foreground": "#a58f11"
             },
-        },
-        "[Default Dark+]": {
-            "rules": {
-                "comment:cpp": {
-                    "foreground": "#569CD6"
-                }
-            }
+            // "enumMember": {
+                // "foreground": "#7efc4d"
+            // },
+            // // 成员变量，似乎需要clangd12以上
+            // "property": {
+            // "fontStyle": "underline",
+            // "foreground": "#C8ECFF"
+            // },
+            // // 类型参数
+            // "typeParameter": "#31A567"
         }
-        }
-
+        // "rules": {
+        //     "comment": {
+        //         // your preferred style here
+        //     },
+        // },
+        // "[Default Dark+]": {
+        //     "rules": {
+        //         "comment:cpp": {
+        //             "foreground": "#569CD6"
+        //         }
+        //     }
+        // }
     },
+    "editor.semanticHighlighting.enabled": true,
     "highlightwords.colors": [
         {"dark": "yellow" },
         {"dark": "Cyan" },
