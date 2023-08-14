@@ -370,21 +370,14 @@ Ctrl + K, Ctrl + F 也可以格式化指定部分
     "clang-format.assumeFilename": "/studio/robin.jiang/Doc/vscode/.clang-format",
     "clangd.onConfigChanged": "restart",
 "clangd.arguments": [
-    "--compile-commands-dir=${workspaceFolder}",
-    "--log=info",
-    "--enable-config",
-    "-j=12",
-    "--background-index",
-    "-header-insertion=iwyu",
-    "--completion-style=detailed"
-],
-"clangd.fallbackFlags": [
-    "-I${workspaceFolder}/include",
-    "-I${workspaceFolder}/out/include",
-    "-I${workspaceFolder}/out/include/generated",
-    "-I${workspaceFolder}/build/include",
-    "-I${workspaceFolder}/build/include/generated",
-    "-I${workspaceFolder}/build/.config"
+        "--enable-config",
+        "-j=12",
+        "--background-index",
+        "--completion-style=detailed",
+        "--log=verbose",
+        "--all-scopes-completion"
+        "-header-insertion=iwyu",
+        "--completion-style=detailed"
 ],
     
 }
