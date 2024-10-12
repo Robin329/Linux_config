@@ -1,5 +1,3 @@
-BasedOnStyle: Google
-
 AlwaysBreakBeforeMultilineStrings: false
 CommentPragmas: NOLINT:.*
 ConstructorInitializerIndentWidth: 6
